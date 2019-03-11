@@ -3,15 +3,15 @@
 // license that can be found in the LICENSE file.
 
 // Package user provides tools for parsing and validating user names.
-package user // import "upspin.io/user"
+package user // import "github.com/palager/upspin/user"
 
 import (
 	"strings"
 
 	"golang.org/x/text/secure/precis"
 
-	"upspin.io/errors"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/upspin"
 )
 
 // Parse splits an upspin.UserName into user and domain and returns the pair.

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package dircache // import "upspin.io/dir/dircache"
+package dircache // import "github.com/palager/upspin/dir/dircache"
 
 // This file defines and implements a replayable log for the directory cache.
 //
@@ -37,12 +37,12 @@ import (
 	"strings"
 	"sync"
 
-	"upspin.io/access"
-	"upspin.io/cache"
-	"upspin.io/errors"
-	"upspin.io/log"
-	"upspin.io/path"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/access"
+	"github.com/palager/upspin/cache"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
 )
 
 // request is the requested operation to be performed on the DirEntry.

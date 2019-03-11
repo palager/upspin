@@ -7,7 +7,7 @@ package serverutil
 import (
 	"net"
 
-	"upspin.io/config"
+	"github.com/palager/upspin/config"
 )
 
 // IsLoopback returns true if the name only resolves to loopback addresses.

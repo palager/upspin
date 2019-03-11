@@ -9,17 +9,17 @@
 
 // +build !windows
 
-package main // import "upspin.io/cmd/upspinfs"
+package main // import "github.com/palager/upspin/cmd/upspinfs"
 
 import (
 	"os"
 	"sync"
 	"time"
 
-	"upspin.io/errors"
-	"upspin.io/log"
-	"upspin.io/path"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
 )
 
 const (

@@ -4,7 +4,7 @@
 
 // Audit provides subcommands for auditing storage consumption.
 // See the command's usage method for documentation.
-package main // import "upspin.io/cmd/upspin-audit"
+package main // import "github.com/palager/upspin/cmd/upspin-audit"
 
 // TODO:
 // - add failsafes to avoid misuse of delete-garbage
@@ -25,13 +25,13 @@ import (
 	"strings"
 	"time"
 
-	"upspin.io/config"
-	"upspin.io/errors"
-	"upspin.io/flags"
-	"upspin.io/subcmd"
-	"upspin.io/transports"
-	"upspin.io/upspin"
-	"upspin.io/version"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/flags"
+	"github.com/palager/upspin/subcmd"
+	"github.com/palager/upspin/transports"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/version"
 )
 
 const (

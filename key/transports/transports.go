@@ -5,16 +5,16 @@
 // Package transports is a helper package that aggregates the user imports.
 // It is meant to be imported, using an "underscore" import, as a convenient
 // way to link with all the transport implementations.
-package transports // import "upspin.io/key/transports"
+package transports // import "github.com/palager/upspin/key/transports"
 
 import (
-	"upspin.io/bind"
-	"upspin.io/key/inprocess"
-	"upspin.io/key/usercache"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/key/inprocess"
+	"github.com/palager/upspin/key/usercache"
+	"github.com/palager/upspin/upspin"
 
-	_ "upspin.io/key/remote"
-	_ "upspin.io/key/unassigned"
+	_ "github.com/palager/upspin/key/remote"
+	_ "github.com/palager/upspin/key/unassigned"
 )
 
 func init() {

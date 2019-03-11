@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package ee // import "upspin.io/pack/ee"
+package ee // import "github.com/palager/upspin/pack/ee"
 
 import (
 	"crypto/aes"
@@ -12,8 +12,8 @@ import (
 	"crypto/rand"
 	"encoding/binary"
 
-	"upspin.io/errors"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/upspin"
 )
 
 // drng is an io.Reader returning deterministic random bits seeded from aesKey.

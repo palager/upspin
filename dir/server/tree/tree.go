@@ -14,12 +14,12 @@ import (
 	"sort"
 	"sync"
 
-	"upspin.io/dir/server/serverlog"
-	"upspin.io/errors"
-	"upspin.io/log"
-	"upspin.io/pack"
-	"upspin.io/path"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/dir/server/serverlog"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/pack"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
 )
 
 // node is an internal representation of a node in the tree.

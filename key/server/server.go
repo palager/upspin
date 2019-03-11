@@ -14,15 +14,15 @@ import (
 	"strings"
 	"sync"
 
-	"upspin.io/cache"
-	"upspin.io/cloud/storage"
-	"upspin.io/errors"
-	"upspin.io/factotum"
-	"upspin.io/log"
-	"upspin.io/metric"
-	"upspin.io/upspin"
-	"upspin.io/user"
-	"upspin.io/valid"
+	"github.com/palager/upspin/cache"
+	"github.com/palager/upspin/cloud/storage"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/factotum"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/metric"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/user"
+	"github.com/palager/upspin/valid"
 )
 
 const cacheSize = 10000

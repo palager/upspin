@@ -7,7 +7,7 @@
 // package itself.
 //
 // These protocol buffers are used in the networking API to talk to Upspin
-// servers. The wire protocol is described by package upspin.io/rpc.
+// servers. The wire protocol is described by package github.com/palager/upspin/rpc.
 //
 // Unlike in some other systems, the protocol buffer types themselves are not
 // used within the rest of the Upspin implementation. Instead, native Go types
@@ -17,17 +17,17 @@
 //
 // Within the protocol buffers, some of the types are stored as uninterpreted
 // bytes that are transcoded with custom code. For instance, the
-// upspin.io/errors.Error type is transmitted as a byte slice that is marshaled
+// github.com/palager/upspin/errors.Error type is transmitted as a byte slice that is marshaled
 // and unmarshaled using the MarshalError and UnmarshalError routines in the
 // errors package. This technique preserves the properties of the Go type across
 // the network.
-package proto // import "upspin.io/upspin/proto"
+package proto // import "github.com/palager/upspin/upspin/proto"
 
 import (
 	"time"
 
-	"upspin.io/errors"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/upspin"
 )
 
 // To regenerate the protocol buffer output for this package, run

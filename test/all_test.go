@@ -10,14 +10,14 @@ import (
 	"math/rand"
 	"testing"
 
-	"upspin.io/test/testenv"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/test/testenv"
+	"github.com/palager/upspin/upspin"
 
-	_ "upspin.io/dir/inprocess"
-	_ "upspin.io/pack/ee"
-	_ "upspin.io/pack/eeintegrity"
-	_ "upspin.io/pack/plain"
-	_ "upspin.io/store/inprocess"
+	_ "github.com/palager/upspin/dir/inprocess"
+	_ "github.com/palager/upspin/pack/ee"
+	_ "github.com/palager/upspin/pack/eeintegrity"
+	_ "github.com/palager/upspin/pack/plain"
+	_ "github.com/palager/upspin/store/inprocess"
 )
 
 func TestClientFile(t *testing.T) {

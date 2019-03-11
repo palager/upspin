@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package storecache // import "upspin.io/store/storecache"
+package storecache // import "github.com/palager/upspin/store/storecache"
 
 import (
 	"bufio"
@@ -15,11 +15,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"upspin.io/bind"
-	"upspin.io/cache"
-	"upspin.io/key/sha256key"
-	"upspin.io/log"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/cache"
+	"github.com/palager/upspin/key/sha256key"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/upspin"
 )
 
 const (

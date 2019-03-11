@@ -5,7 +5,7 @@
 // This file contains implementations of things like marshaling of the
 // basic Upspin types.
 
-package upspin // import "upspin.io/upspin"
+package upspin // import "github.com/palager/upspin/upspin"
 
 import (
 	"encoding/binary"

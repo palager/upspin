@@ -12,8 +12,8 @@ import (
 
 	"bazil.org/fuse"
 
-	"upspin.io/errors"
-	"upspin.io/log"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/log"
 )
 
 // errnoError is a go string with a POSIX syscall error number.

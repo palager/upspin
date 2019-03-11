@@ -9,7 +9,7 @@ import (
 	"net"
 	"strings"
 
-	"upspin.io/upspin"
+	"github.com/palager/upspin/upspin"
 )
 
 const localSuffix = ".localhost."

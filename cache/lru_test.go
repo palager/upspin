@@ -14,7 +14,7 @@ import (
 	"reflect"
 	"testing"
 
-	"upspin.io/cache"
+	"github.com/palager/upspin/cache"
 )
 
 func TestLRU(t *testing.T) {

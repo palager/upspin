@@ -4,7 +4,7 @@
 
 // Package frontend provides a web server that serves documentation and meta
 // tags to instruct "go get" where to find the Upspin source repository.
-package frontend // import "upspin.io/serverutil/frontend"
+package frontend // import "github.com/palager/upspin/serverutil/frontend"
 
 import (
 	"bytes"
@@ -23,14 +23,14 @@ import (
 	"github.com/NYTimes/gziphandler"
 	"github.com/russross/blackfriday"
 
-	"upspin.io/config"
-	"upspin.io/flags"
-	"upspin.io/log"
-	"upspin.io/serverutil/web"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/flags"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/serverutil/web"
+	"github.com/palager/upspin/upspin"
 
-	_ "upspin.io/pack/eeintegrity"
-	_ "upspin.io/transports"
+	_ "github.com/palager/upspin/pack/eeintegrity"
+	_ "github.com/palager/upspin/transports"
 )
 
 func Main() {
@@ -66,29 +66,29 @@ func Main() {
 
 const (
 	extMarkdown  = ".md"
-	docHostname  = "upspin.io"      // redirect doc requests to this host
-	testHostname = "test.upspin.io" // don't redirect requests to this host
-	augieUser    = "augie@upspin.io"
+	docHostname  = "github.com/palager/upspin"      // redirect doc requests to this host
+	testHostname = "test.github.com/palager/upspin" // don't redirect requests to this host
+	augieUser    = "augie@github.com/palager/upspin"
 )
 
 // sourceRepo is a map from each custom domain to their repo base URLs.
 var sourceRepo = map[string]string{
-	"upspin.io": "https://upspin.googlesource.com/upspin",
+	"github.com/palager/upspin": "https://upspin.googlesource.com/upspin",
 
-	"android.upspin.io":      "https://upspin.googlesource.com/android",
-	"augie.upspin.io":        "https://upspin.googlesource.com/augie",
-	"aws.upspin.io":          "https://upspin.googlesource.com/aws",
-	"b2.upspin.io":           "https://upspin.googlesource.com/b2",
-	"digitalocean.upspin.io": "https://upspin.googlesource.com/digitalocean",
-	"drive.upspin.io":        "https://upspin.googlesource.com/drive",
-	"dropbox.upspin.io":      "https://upspin.googlesource.com/dropbox",
-	"exp.upspin.io":          "https://upspin.googlesource.com/exp",
-	"gcp.upspin.io":          "https://upspin.googlesource.com/gcp",
-	"openstack.upspin.io":    "https://upspin.googlesource.com/openstack",
+	"android.github.com/palager/upspin":      "https://upspin.googlesource.com/android",
+	"augie.github.com/palager/upspin":        "https://upspin.googlesource.com/augie",
+	"aws.github.com/palager/upspin":          "https://upspin.googlesource.com/aws",
+	"b2.github.com/palager/upspin":           "https://upspin.googlesource.com/b2",
+	"digitalocean.github.com/palager/upspin": "https://upspin.googlesource.com/digitalocean",
+	"drive.github.com/palager/upspin":        "https://upspin.googlesource.com/drive",
+	"dropbox.github.com/palager/upspin":      "https://upspin.googlesource.com/dropbox",
+	"exp.github.com/palager/upspin":          "https://upspin.googlesource.com/exp",
+	"gcp.github.com/palager/upspin":          "https://upspin.googlesource.com/gcp",
+	"openstack.github.com/palager/upspin":    "https://upspin.googlesource.com/openstack",
 }
 
 func defaultDocPath() string {
-	p, err := build.Import("upspin.io/doc", "", build.FindOnly)
+	p, err := build.Import("github.com/palager/upspin/doc", "", build.FindOnly)
 	if err != nil {
 		return ""
 	}
@@ -271,7 +271,7 @@ type canonicalHostHandler struct {
 }
 
 func (h canonicalHostHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	// Redirect requests to foo.upspin.io to upspin.io.
+	// Redirect requests to foo.github.com/palager/upspin to github.com/palager/upspin.
 	if r.Host != docHostname && r.Host != testHostname && strings.HasSuffix(r.Host, "."+docHostname) {
 		u := *r.URL
 		u.Host = docHostname

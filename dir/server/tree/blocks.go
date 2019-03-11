@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package tree // import "upspin.io/dir/server/tree"
+package tree // import "github.com/palager/upspin/dir/server/tree"
 
 // This file implements block reading and writing.
 
 import (
-	"upspin.io/bind"
-	"upspin.io/client/clientutil"
-	"upspin.io/errors"
-	"upspin.io/path"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/client/clientutil"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
 )
 
 // store marshals kids and packs them for the given DirEntry, updating its

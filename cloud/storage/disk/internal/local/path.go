@@ -3,13 +3,13 @@
 // license that can be found in the LICENSE file.
 
 // Package local converts blob references into local path names for on-disk storage.
-package local // import "upspin.io/cloud/storage/disk/internal/local"
+package local // import "github.com/palager/upspin/cloud/storage/disk/internal/local"
 import (
 	"encoding/base64"
 	"path/filepath"
 	"strings"
 
-	"upspin.io/errors"
+	"github.com/palager/upspin/errors"
 )
 
 // Both encodings compute the base64 encoding of the reference.

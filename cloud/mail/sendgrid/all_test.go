@@ -10,7 +10,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"upspin.io/errors"
+	"github.com/palager/upspin/errors"
 )
 
 func TestSend(t *testing.T) {

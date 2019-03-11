@@ -17,7 +17,7 @@ any contents can be changed with impunity.
 The arguments to exported functions are the same as the equivalent os pkg functions.
 */
 
-package ose // import "upspin.io/cmd/upspinfs/internal/ose"
+package ose // import "github.com/palager/upspin/cmd/upspinfs/internal/ose"
 
 import (
 	"crypto/aes"
@@ -25,7 +25,7 @@ import (
 	"crypto/rand"
 	"encoding/binary"
 
-	"upspin.io/cache"
+	"github.com/palager/upspin/cache"
 
 	"fmt"
 	"os"

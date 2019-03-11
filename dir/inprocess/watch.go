@@ -7,11 +7,11 @@ package inprocess
 import (
 	"time"
 
-	"upspin.io/access"
-	"upspin.io/errors"
-	"upspin.io/log"
-	"upspin.io/path"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/access"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
 )
 
 const watchTimeout = 10 * time.Second

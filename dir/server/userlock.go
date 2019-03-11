@@ -7,7 +7,7 @@ package server
 import (
 	"sync"
 
-	"upspin.io/upspin"
+	"github.com/palager/upspin/upspin"
 )
 
 const numUserLocks = 100

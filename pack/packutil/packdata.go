@@ -3,14 +3,14 @@
 // license that can be found in the LICENSE file.
 
 // Package packutil provides helper functions for DirEntry Packdata computation.
-package packutil // import "upspin.io/pack/packutil"
+package packutil // import "github.com/palager/upspin/pack/packutil"
 
 import (
 	"encoding/binary"
 
-	"upspin.io/bind"
-	"upspin.io/errors"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/upspin"
 )
 
 // PutBytes stores the varint-encoded length of src in dst, followed by a copy of src.

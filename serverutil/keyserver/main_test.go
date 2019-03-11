@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"upspin.io/serverutil/signup"
+	"github.com/palager/upspin/serverutil/signup"
 )
 
 func TestMailConfig(t *testing.T) {
@@ -25,11 +25,11 @@ func TestMailConfig(t *testing.T) {
 apikey: 123
 project: test
 notify: me@email.com
-from: server@upspin.io`,
+from: server@github.com/palager/upspin`,
 			mc: &signup.MailConfig{
 				Project: "test",
 				Notify:  "me@email.com",
-				From:    "server@upspin.io",
+				From:    "server@github.com/palager/upspin",
 			},
 		},
 		{
@@ -45,7 +45,7 @@ notify: me@email.com`,
 			data: `
 project: test
 notify: me@email.com
-from: server@upspin.io`,
+from: server@github.com/palager/upspin`,
 			errStr: `key "apikey" is missing`,
 		},
 	} {

@@ -12,14 +12,14 @@ import (
 	"strings"
 	"testing"
 
-	"upspin.io/config"
-	"upspin.io/errors"
-	"upspin.io/factotum"
-	"upspin.io/pack"
-	"upspin.io/pack/internal/packtest"
-	"upspin.io/test/testfixtures"
-	"upspin.io/test/testutil"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/factotum"
+	"github.com/palager/upspin/pack"
+	"github.com/palager/upspin/pack/internal/packtest"
+	"github.com/palager/upspin/test/testfixtures"
+	"github.com/palager/upspin/test/testutil"
+	"github.com/palager/upspin/upspin"
 )
 
 const (
@@ -92,7 +92,7 @@ func testPackAndUnpack(t *testing.T, cfg upspin.Config, packer upspin.Packer, na
 
 func TestPack(t *testing.T) {
 	const (
-		user upspin.UserName = "joe@upspin.io"
+		user upspin.UserName = "joe@github.com/palager/upspin"
 		name                 = upspin.PathName(user + "/file/of/user")
 		text                 = "this is some text"
 	)
@@ -102,7 +102,7 @@ func TestPack(t *testing.T) {
 
 func benchmarkPlainPack(b *testing.B, fileSize int) {
 	b.SetBytes(int64(fileSize))
-	const user upspin.UserName = "joe@upspin.io"
+	const user upspin.UserName = "joe@github.com/palager/upspin"
 	data := make([]byte, fileSize)
 	n, err := rand.Read(data)
 	if err != nil {
@@ -158,7 +158,7 @@ func BenchmarkPlainPack_1kbyte(b *testing.B) { benchmarkPlainPack(b, 1024) }
 func BenchmarkPlainPack_1Mbyte(b *testing.B) { benchmarkPlainPack(b, 1024*1024) }
 
 func TestMultiBlockRoundTrip(t *testing.T) {
-	const userName = upspin.UserName("aly@upspin.io")
+	const userName = upspin.UserName("aly@github.com/palager/upspin")
 	cfg, packer := setup(userName)
 	packtest.TestMultiBlockRoundTrip(t, cfg, packer, userName)
 }

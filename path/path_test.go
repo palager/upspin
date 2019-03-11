@@ -7,7 +7,7 @@ package path
 import (
 	"testing"
 
-	"upspin.io/upspin"
+	"github.com/palager/upspin/upspin"
 )
 
 type parseTest struct {

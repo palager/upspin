@@ -3,14 +3,14 @@
 // license that can be found in the LICENSE file.
 
 // Package inprocess implements a simple non-persistent in-memory store service.
-package inprocess // import "upspin.io/store/inprocess"
+package inprocess // import "github.com/palager/upspin/store/inprocess"
 
 import (
 	"sync"
 
-	"upspin.io/errors"
-	"upspin.io/key/sha256key"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/key/sha256key"
+	"github.com/palager/upspin/upspin"
 )
 
 // service returns data and metadata referenced by the request.

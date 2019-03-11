@@ -11,8 +11,8 @@ import (
 	"os"
 	"testing"
 
-	"upspin.io/cloud/storage"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/cloud/storage"
+	"github.com/palager/upspin/upspin"
 )
 
 func TestList(t *testing.T) {

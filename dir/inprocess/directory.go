@@ -3,7 +3,7 @@
 // license that can be found in the LICENSE file.
 
 // Package inprocess implements a simple, non-persistent, in-memory directory service.
-package inprocess // import "upspin.io/dir/inprocess"
+package inprocess // import "github.com/palager/upspin/dir/inprocess"
 
 // The implementation uses a Merkle tree to represent the directory tree.
 // For simplicity, a directory's data is always stored as a single block.
@@ -14,19 +14,19 @@ package inprocess // import "upspin.io/dir/inprocess"
 import (
 	"sync"
 
-	"upspin.io/access"
-	"upspin.io/bind"
-	"upspin.io/client/clientutil"
-	"upspin.io/errors"
-	"upspin.io/log"
-	"upspin.io/pack"
-	"upspin.io/path"
-	"upspin.io/serverutil"
-	"upspin.io/upspin"
-	"upspin.io/user"
-	"upspin.io/valid"
+	"github.com/palager/upspin/access"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/client/clientutil"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/pack"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/serverutil"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/user"
+	"github.com/palager/upspin/valid"
 
-	_ "upspin.io/pack/ee"
+	_ "github.com/palager/upspin/pack/ee"
 )
 
 func New(config upspin.Config) upspin.DirServer {

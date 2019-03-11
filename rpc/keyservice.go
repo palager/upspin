@@ -5,9 +5,9 @@
 package rpc
 
 import (
-	"upspin.io/bind"
-	"upspin.io/errors"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/upspin"
 )
 
 // PublicUserKeyService returns a Lookup function that looks up user's public keys.

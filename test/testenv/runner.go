@@ -11,12 +11,12 @@ import (
 	"strings"
 	"time"
 
-	"upspin.io/access"
-	"upspin.io/bind"
-	"upspin.io/client"
-	"upspin.io/config"
-	"upspin.io/errors"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/access"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/client"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/upspin"
 )
 
 // Runner is a helper for writing tests that interact with Upspin trees.

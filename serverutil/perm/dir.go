@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package perm // import "upspin.io/serverutil/perm"
+package perm // import "github.com/palager/upspin/serverutil/perm"
 
 import (
-	"upspin.io/errors"
-	"upspin.io/path"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
 )
 
 // WrapDir wraps the given DirServer with a DirServer that checks root-creation

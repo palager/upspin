@@ -16,10 +16,10 @@ import (
 
 	yaml "gopkg.in/yaml.v2"
 
-	"upspin.io/config"
-	"upspin.io/key/keygen"
-	"upspin.io/subcmd"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/key/keygen"
+	"github.com/palager/upspin/subcmd"
+	"github.com/palager/upspin/upspin"
 )
 
 // This file implements the initial configuration for a new domain.

@@ -43,7 +43,7 @@ Finally, the Client interface provides a coherent high-level file-like API
 that, internally, calls upon the other services to access and manage the data.
 Most applications using Upspin will talk to the Client interface alone.
 
-Most users of Upspin will use the public KeyServer at key.upspin.io
+Most users of Upspin will use the public KeyServer at key.github.com/palager/upspin
 to hold their public keys, but run private DirServers and StoreServers.
 The shared key server combined with uniform interfaces provide a
 consistent public view of the system.
@@ -56,7 +56,7 @@ the caller or the method, respectively.
 
 For more information about the overall system see
 
-	upspin.io/doc/overview.md
+	github.com/palager/upspin/doc/overview.md
 
 and other documents in that directory.
 */

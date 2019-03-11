@@ -12,10 +12,10 @@ import (
 	"strings"
 	"testing"
 
-	"upspin.io/config"
-	"upspin.io/errors"
-	"upspin.io/log"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/upspin"
 )
 
 var noError error

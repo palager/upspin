@@ -7,9 +7,9 @@ package main
 import (
 	"flag"
 
-	"upspin.io/errors"
-	"upspin.io/path"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
 )
 
 func (s *State) mkdir(args ...string) {

@@ -3,12 +3,12 @@
 // license that can be found in the LICENSE file.
 
 // Package unassigned implements a store server that errors out all its requests.
-package unassigned // import "upspin.io/store/unassigned"
+package unassigned // import "github.com/palager/upspin/store/unassigned"
 
 import (
-	"upspin.io/bind"
-	"upspin.io/errors"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/upspin"
 )
 
 // Server implements upspin.StoreServer.

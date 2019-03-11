@@ -7,8 +7,8 @@ package keyserver
 import (
 	"net/http"
 
-	"upspin.io/key/server"
-	"upspin.io/log"
+	"github.com/palager/upspin/key/server"
+	"github.com/palager/upspin/log"
 )
 
 type logHandler struct {

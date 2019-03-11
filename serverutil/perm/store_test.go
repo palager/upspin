@@ -7,11 +7,11 @@ package perm
 import (
 	"testing"
 
-	"upspin.io/access"
-	"upspin.io/bind"
-	"upspin.io/errors"
-	"upspin.io/test/testenv"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/access"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/test/testenv"
+	"github.com/palager/upspin/upspin"
 )
 
 func setupStoreEnv(t *testing.T) (store upspin.StoreServer, perm *Perm, ownerEnv *testenv.Env, wait, cleanup func()) {
@@ -151,7 +151,7 @@ func TestStoreIncludeRemoteGroups(t *testing.T) {
 
 	// No one else is allowed.
 	for _, user := range []upspin.UserName{
-		"all@upspin.io",
+		"all@github.com/palager/upspin",
 		"foo@bar.com",
 		"god@heaven.infinite",
 		"nobody@nobody.org",

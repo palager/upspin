@@ -4,31 +4,31 @@
 
 // Dirserver is a wrapper for a directory implementation that presents it as an
 // HTTP interface. It provides the common code used by all dirserver commands.
-package dirserver // import "upspin.io/serverutil/dirserver"
+package dirserver // import "github.com/palager/upspin/serverutil/dirserver"
 
 import (
 	"flag"
 	"net/http"
 
-	"upspin.io/config"
-	"upspin.io/dir/inprocess"
-	"upspin.io/dir/server"
-	"upspin.io/errors"
-	"upspin.io/flags"
-	"upspin.io/log"
-	"upspin.io/rpc/dirserver"
-	"upspin.io/serverutil/perm"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/dir/inprocess"
+	"github.com/palager/upspin/dir/server"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/flags"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/rpc/dirserver"
+	"github.com/palager/upspin/serverutil/perm"
+	"github.com/palager/upspin/upspin"
 
 	// TODO: Which of these are actually needed?
 
 	// Load useful packers
-	_ "upspin.io/pack/ee"
-	_ "upspin.io/pack/eeintegrity"
-	_ "upspin.io/pack/plain"
+	_ "github.com/palager/upspin/pack/ee"
+	_ "github.com/palager/upspin/pack/eeintegrity"
+	_ "github.com/palager/upspin/pack/plain"
 
 	// Load required transports
-	_ "upspin.io/transports"
+	_ "github.com/palager/upspin/transports"
 )
 
 var storeServerUser = flag.String("storeserveruser", "", "`user name` of the StoreServer")

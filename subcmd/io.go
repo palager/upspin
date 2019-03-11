@@ -13,10 +13,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"upspin.io/config"
-	"upspin.io/path"
-	"upspin.io/upspin"
-	"upspin.io/user"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/user"
 )
 
 var userLookup = osUser.Lookup

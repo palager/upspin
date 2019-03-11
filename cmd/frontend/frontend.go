@@ -8,11 +8,11 @@
 // The -local flag is for running a local binary, such as for testing the
 // documentation. With this flag set, frontend ignores the config file, runs HTTP
 // only on localhost:8080 and does not serve release binaries.
-package main // import "upspin.io/cmd/frontend"
+package main // import "github.com/palager/upspin/cmd/frontend"
 
 import (
-	"upspin.io/cloud/https"
-	"upspin.io/serverutil/frontend"
+	"github.com/palager/upspin/cloud/https"
+	"github.com/palager/upspin/serverutil/frontend"
 )
 
 func main() {

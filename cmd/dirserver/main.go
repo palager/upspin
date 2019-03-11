@@ -4,21 +4,21 @@
 
 // Dirserver is a wrapper for a directory implementation that presents it as an
 // HTTP interface.
-package main // import "upspin.io/cmd/dirserver"
+package main // import "github.com/palager/upspin/cmd/dirserver"
 
 import (
-	"upspin.io/cloud/https"
-	"upspin.io/serverutil/dirserver"
+	"github.com/palager/upspin/cloud/https"
+	"github.com/palager/upspin/serverutil/dirserver"
 
 	// TODO: Which of these are actually needed?
 
 	// Load useful packers
-	_ "upspin.io/pack/ee"
-	_ "upspin.io/pack/eeintegrity"
-	_ "upspin.io/pack/plain"
+	_ "github.com/palager/upspin/pack/ee"
+	_ "github.com/palager/upspin/pack/eeintegrity"
+	_ "github.com/palager/upspin/pack/plain"
 
 	// Load required transports
-	_ "upspin.io/transports"
+	_ "github.com/palager/upspin/transports"
 )
 
 func main() {

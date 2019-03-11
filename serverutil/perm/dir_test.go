@@ -7,10 +7,10 @@ package perm
 import (
 	"testing"
 
-	"upspin.io/bind"
-	"upspin.io/errors"
-	"upspin.io/test/testenv"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/test/testenv"
+	"github.com/palager/upspin/upspin"
 )
 
 func TestDirIntegration(t *testing.T) {

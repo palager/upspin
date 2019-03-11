@@ -5,8 +5,8 @@
 package internal
 
 import (
-	"upspin.io/errors"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/upspin"
 )
 
 // CheckLocationSet checks whether the previous block's Location field

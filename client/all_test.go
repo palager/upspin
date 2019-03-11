@@ -11,20 +11,20 @@ import (
 	"strings"
 	"testing"
 
-	"upspin.io/bind"
-	"upspin.io/config"
-	"upspin.io/factotum"
-	"upspin.io/flags"
-	"upspin.io/log"
-	"upspin.io/pack"
-	"upspin.io/test/testutil"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/factotum"
+	"github.com/palager/upspin/flags"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/pack"
+	"github.com/palager/upspin/test/testutil"
+	"github.com/palager/upspin/upspin"
 
-	dirserver "upspin.io/dir/inprocess"
-	keyserver "upspin.io/key/inprocess"
-	storeserver "upspin.io/store/inprocess"
+	dirserver "github.com/palager/upspin/dir/inprocess"
+	keyserver "github.com/palager/upspin/key/inprocess"
+	storeserver "github.com/palager/upspin/store/inprocess"
 
-	"upspin.io/errors"
+	"github.com/palager/upspin/errors"
 )
 
 var baseCfg upspin.Config

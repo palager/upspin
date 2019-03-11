@@ -5,16 +5,16 @@
 // Package valid does validation of various data types.
 // For the most part, its functions are used by servers and enforce
 // stronger constraints than client code needs to follow.
-package valid // import "upspin.io/valid"
+package valid // import "github.com/palager/upspin/valid"
 
 import (
 	"strconv"
 
-	"upspin.io/access"
-	"upspin.io/errors"
-	"upspin.io/path"
-	"upspin.io/upspin"
-	"upspin.io/user"
+	"github.com/palager/upspin/access"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/user"
 )
 
 // UserName verifies that the name is a syntactically valid user's email address.
@@ -55,7 +55,7 @@ func User(user *upspin.User) error {
 }
 
 // validPathName verifies that the name is valid, clean and canonically formatted.
-// See upspin.io/path.Clean for the specification. One important check is that this
+// See github.com/palager/upspin/path.Clean for the specification. One important check is that this
 // function requires a user's root to have the trailing slash; path.Parse does not.
 func validPathName(name upspin.PathName) error {
 	parsed, err := path.Parse(name)

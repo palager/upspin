@@ -9,7 +9,7 @@ Such clusters of Upspin servers are usually ephemeral in nature, making them
 useful for testing, developing Upspin clients and servers, and experiments.
 
 For information on defining a schema, see the documentation for package
-upspin.io/upbox.
+github.com/palager/upspin/upbox.
 */
 package main
 
@@ -20,8 +20,8 @@ import (
 	"os/exec"
 	"strings"
 
-	"upspin.io/log"
-	"upspin.io/upbox"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/upbox"
 )
 
 var (

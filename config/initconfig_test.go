@@ -14,11 +14,11 @@ import (
 	"strings"
 	"testing"
 
-	"upspin.io/pack"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/pack"
+	"github.com/palager/upspin/upspin"
 
-	_ "upspin.io/pack/ee"
-	_ "upspin.io/pack/plain"
+	_ "github.com/palager/upspin/pack/ee"
+	_ "github.com/palager/upspin/pack/plain"
 )
 
 func init() {

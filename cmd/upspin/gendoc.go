@@ -17,7 +17,7 @@ import (
 	"sort"
 	"strings"
 
-	"upspin.io/flags"
+	"github.com/palager/upspin/flags"
 )
 
 func init() {

@@ -23,12 +23,12 @@ import (
 	texttemplate "text/template"
 	"time"
 
-	"upspin.io/client"
-	"upspin.io/errors"
-	"upspin.io/log"
-	"upspin.io/path"
-	"upspin.io/test/testutil"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/client"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/test/testutil"
+	"github.com/palager/upspin/upspin"
 )
 
 // osArchHuman describes operating system and processor architectures
@@ -61,7 +61,7 @@ const (
 	archiveFormat = "upspin.%s.%s"
 
 	// releaseUser is the tree in which the releases are kept.
-	releaseUser = "release@upspin.io"
+	releaseUser = "release@github.com/palager/upspin"
 
 	// readmeURL is the location of the README template file.
 	readmeURL = "https://raw.githubusercontent.com/upspin/upspin/master/README.binary"
@@ -388,7 +388,7 @@ func (a *archive) build(c upspin.Client, des []*upspin.DirEntry) error {
 // readme generates the contents of the README file for this archive,
 // using readmeURL as a template.
 func (a *archive) readme() ([]byte, error) {
-	const debug = false // If true, use README.binary from local upspin.io repo.
+	const debug = false // If true, use README.binary from local github.com/palager/upspin repo.
 
 	var b []byte
 	if debug {

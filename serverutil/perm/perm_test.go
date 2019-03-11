@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	"upspin.io/bind"
-	"upspin.io/test/testenv"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/test/testenv"
+	"github.com/palager/upspin/upspin"
 )
 
 const (

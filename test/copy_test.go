@@ -7,8 +7,8 @@ package test
 import (
 	"testing"
 
-	"upspin.io/test/testenv"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/test/testenv"
+	"github.com/palager/upspin/upspin"
 )
 
 // testCopyEntries tests that servers return copies of data instead of

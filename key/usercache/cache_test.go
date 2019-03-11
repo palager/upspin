@@ -10,13 +10,13 @@ import (
 	"testing"
 	"time"
 
-	"upspin.io/bind"
-	"upspin.io/cache"
-	"upspin.io/config"
-	"upspin.io/errors"
-	"upspin.io/factotum"
-	"upspin.io/test/testutil"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/cache"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/factotum"
+	"github.com/palager/upspin/test/testutil"
+	"github.com/palager/upspin/upspin"
 )
 
 // service is a KeyServer implementation that counts lookups.
@@ -68,7 +68,7 @@ func setup(t *testing.T, user string) (uncached, cached upspin.KeyServer) {
 		},
 	}
 
-	if user == "test@upspin.io" {
+	if user == "test@github.com/palager/upspin" {
 		c = config.SetDirEndpoint(c, testDirEndpoint)
 		c = config.SetStoreEndpoint(c, testStoreEndpoint)
 		f, err := factotum.NewFromDir(testutil.Repo("key", "testdata", "test"))
@@ -91,7 +91,7 @@ func setup(t *testing.T, user string) (uncached, cached upspin.KeyServer) {
 // Dialed config, and that we dial just once for
 // Lookups of other users.
 func TestDial(t *testing.T) {
-	const name = "test@upspin.io"
+	const name = "test@github.com/palager/upspin"
 	_, svc := setup(t, name)
 
 	keyService.dials = 0
@@ -228,7 +228,7 @@ func TestExpiration(t *testing.T) {
 }
 
 func TestEndpoint(t *testing.T) {
-	const name = "test@upspin.io"
+	const name = "test@github.com/palager/upspin"
 	_, svc := setup(t, name)
 
 	if got := svc.Endpoint(); got != keyService.Endpoint() {

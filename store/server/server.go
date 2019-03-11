@@ -4,7 +4,7 @@
 
 // Package server implements upspin.StoreServer using storage.Storage as its
 // storage back end.
-package server // import "upspin.io/store/server"
+package server // import "github.com/palager/upspin/store/server"
 
 import (
 	"encoding/json"
@@ -12,12 +12,12 @@ import (
 	"strings"
 	"sync"
 
-	"upspin.io/cloud/storage"
-	"upspin.io/errors"
-	"upspin.io/key/sha256key"
-	"upspin.io/log"
-	"upspin.io/metric"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/cloud/storage"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/key/sha256key"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/metric"
+	"github.com/palager/upspin/upspin"
 )
 
 // server implements upspin.StoreServer.

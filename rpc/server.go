@@ -17,11 +17,11 @@ import (
 
 	pb "github.com/golang/protobuf/proto"
 
-	"upspin.io/errors"
-	"upspin.io/factotum"
-	"upspin.io/log"
-	"upspin.io/upspin"
-	"upspin.io/valid"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/factotum"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/valid"
 )
 
 // Errors returned in case of various authentication failure scenarios.

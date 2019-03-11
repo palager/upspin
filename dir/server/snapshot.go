@@ -8,12 +8,12 @@ import (
 	"strings"
 	"time"
 
-	"upspin.io/dir/server/serverlog"
-	"upspin.io/errors"
-	"upspin.io/log"
-	"upspin.io/path"
-	"upspin.io/upspin"
-	"upspin.io/user"
+	"github.com/palager/upspin/dir/server/serverlog"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/user"
 )
 
 // A snapshot tree is rooted at a suffixed user name+snapshot@domain.com and

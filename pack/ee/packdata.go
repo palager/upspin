@@ -11,9 +11,9 @@ import (
 	"encoding/binary"
 	"math/big"
 
-	"upspin.io/errors"
-	"upspin.io/pack/packutil"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/pack/packutil"
+	"github.com/palager/upspin/upspin"
 )
 
 // wrappedKey encodes a key that will decrypt and verify the ciphertext.

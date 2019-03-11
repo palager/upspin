@@ -4,7 +4,7 @@
 
 // Package keyserver is a wrapper for an upspin.KeyServer implementation
 // that presents it as an authenticated service.
-package keyserver // import "upspin.io/rpc/keyserver"
+package keyserver // import "github.com/palager/upspin/rpc/keyserver"
 
 import (
 	"expvar"
@@ -14,13 +14,13 @@ import (
 
 	pb "github.com/golang/protobuf/proto"
 
-	"upspin.io/config"
-	"upspin.io/errors"
-	"upspin.io/log"
-	"upspin.io/rpc"
-	"upspin.io/serverutil"
-	"upspin.io/upspin"
-	"upspin.io/upspin/proto"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/rpc"
+	"github.com/palager/upspin/serverutil"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/upspin/proto"
 )
 
 type server struct {

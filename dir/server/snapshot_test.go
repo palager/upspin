@@ -10,10 +10,10 @@ import (
 	"testing"
 	"time"
 
-	"upspin.io/access"
-	"upspin.io/errors"
-	"upspin.io/path"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/access"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
 )
 
 const (

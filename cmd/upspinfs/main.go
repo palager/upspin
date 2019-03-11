@@ -14,18 +14,18 @@ import (
 	"os"
 	"path/filepath"
 
-	"upspin.io/cmd/cacheserver/cacheutil"
-	"upspin.io/config"
-	"upspin.io/flags"
-	"upspin.io/log"
-	"upspin.io/rpc/local"
-	"upspin.io/version"
+	"github.com/palager/upspin/cmd/cacheserver/cacheutil"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/flags"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/rpc/local"
+	"github.com/palager/upspin/version"
 
-	_ "upspin.io/pack/ee"
-	_ "upspin.io/pack/eeintegrity"
-	_ "upspin.io/pack/plain"
+	_ "github.com/palager/upspin/pack/ee"
+	_ "github.com/palager/upspin/pack/eeintegrity"
+	_ "github.com/palager/upspin/pack/plain"
 
-	"upspin.io/transports"
+	"github.com/palager/upspin/transports"
 )
 
 const cmdName = "upspinfs"

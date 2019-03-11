@@ -3,7 +3,7 @@
 // license that can be found in the LICENSE file.
 
 // Package factotum encapsulates crypto operations on user's public/private keys.
-package factotum // import "upspin.io/factotum"
+package factotum // import "github.com/palager/upspin/factotum"
 
 import (
 	"bytes"
@@ -21,8 +21,8 @@ import (
 
 	"golang.org/x/crypto/hkdf"
 
-	"upspin.io/errors"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/upspin"
 )
 
 type factotumKey struct {

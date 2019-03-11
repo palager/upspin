@@ -14,7 +14,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"upspin.io/subcmd"
+	"github.com/palager/upspin/subcmd"
 )
 
 type state struct {
@@ -28,7 +28,7 @@ The first step is 'setupdomain' and the final step is 'setupserver'.
 
 This version of setupstorage configures local disk storage.
 Read the documentation at
-	https://upspin.io/doc/server_setup.md
+	https://github.com/palager/upspin/doc/server_setup.md
 for information on configuring upspinserver to use cloud storage services.
 `
 

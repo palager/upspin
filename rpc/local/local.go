@@ -3,13 +3,13 @@
 // license that can be found in the LICENSE file.
 
 // Package local provides interprocess communication on the local host.
-package local // import "upspin.io/rpc/local"
+package local // import "github.com/palager/upspin/rpc/local"
 
 import (
 	"context"
 	"net"
 
-	"upspin.io/config"
+	"github.com/palager/upspin/config"
 )
 
 type Dialer net.Dialer

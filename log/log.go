@@ -4,7 +4,7 @@
 
 // Package log exports logging primitives that log to stderr and also to Google
 // Cloud Logging.
-package log // import "upspin.io/log"
+package log // import "github.com/palager/upspin/log"
 
 import (
 	"bytes"

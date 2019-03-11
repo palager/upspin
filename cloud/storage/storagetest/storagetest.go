@@ -4,11 +4,11 @@
 
 // Package storagetest implements simple types and utility functions to help test
 // implementations of storage.S.
-package storagetest // import "upspin.io/cloud/storage/storagetest"
+package storagetest // import "github.com/palager/upspin/cloud/storage/storagetest"
 
 import (
-	"upspin.io/cloud/storage"
-	"upspin.io/errors"
+	"github.com/palager/upspin/cloud/storage"
+	"github.com/palager/upspin/errors"
 )
 
 // DummyStorage returns a storage.Storage that does nothing.

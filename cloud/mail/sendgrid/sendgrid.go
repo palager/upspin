@@ -3,7 +3,7 @@
 // license that can be found in the LICENSE file.
 
 // Package sendgrid sends email using SendGrid.
-package sendgrid // import "upspin.io/cloud/mail/sendgrid"
+package sendgrid // import "github.com/palager/upspin/cloud/mail/sendgrid"
 
 import (
 	"bytes"
@@ -11,8 +11,8 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"upspin.io/cloud/mail"
-	"upspin.io/errors"
+	"github.com/palager/upspin/cloud/mail"
+	"github.com/palager/upspin/errors"
 )
 
 // sendgrid implements cloud/mail.Mail using SendGrid as the underlying

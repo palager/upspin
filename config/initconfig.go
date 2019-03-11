@@ -3,7 +3,7 @@
 // license that can be found in the LICENSE file.
 
 // Package config creates a client configuration from various sources.
-package config // import "upspin.io/config"
+package config // import "github.com/palager/upspin/config"
 
 import (
 	"bytes"
@@ -18,16 +18,16 @@ import (
 
 	yaml "gopkg.in/yaml.v2"
 
-	"upspin.io/errors"
-	"upspin.io/factotum"
-	"upspin.io/log"
-	"upspin.io/pack"
-	"upspin.io/upspin"
-	"upspin.io/user"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/factotum"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/pack"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/user"
 
 	// Needed because the default packing is "ee" and its
 	// implementation is referenced if no packing is specified.
-	_ "upspin.io/pack/ee"
+	_ "github.com/palager/upspin/pack/ee"
 )
 
 var inTest = false // Generate errors instead of logs for certain problems.
@@ -54,7 +54,7 @@ var (
 	defaultPacking     = upspin.EEPack
 	defaultKeyEndpoint = upspin.Endpoint{
 		Transport: upspin.Remote,
-		NetAddr:   "key.upspin.io:443",
+		NetAddr:   "key.github.com/palager/upspin:443",
 	}
 )
 
@@ -109,7 +109,7 @@ func FromFile(name string) (upspin.Config, error) {
 //
 // Any endpoints (keyserver, dirserver, storeserver) not set in the data for
 // the config will be set to the "unassigned" transport and an empty network
-// address, except keyserver which defaults to "remote,key.upspin.io:443".
+// address, except keyserver which defaults to "remote,key.github.com/palager/upspin:443".
 // If an endpoint is specified without a transport it is assumed to be
 // the address component of a remote endpoint.
 // If a remote endpoint is specified without a port in its address component

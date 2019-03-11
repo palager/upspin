@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package testfixtures // import "upspin.io/test/testfixtures"
+package testfixtures // import "github.com/palager/upspin/test/testfixtures"
 
-import "upspin.io/upspin"
+import "github.com/palager/upspin/upspin"
 
 type simpleConfig struct {
 	userName upspin.UserName

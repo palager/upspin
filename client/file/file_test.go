@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"upspin.io/upspin"
+	"github.com/palager/upspin/upspin"
 )
 
 func create(name upspin.PathName) upspin.File {

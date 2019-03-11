@@ -590,7 +590,7 @@ The first step is 'setupdomain' and the final step is 'setupserver'.
 
 This version of setupstorage configures local disk storage.
 Read the documentation at
-	https://upspin.io/doc/server_setup.md
+	https://github.com/palager/upspin/doc/server_setup.md
 for information on configuring upspinserver to use cloud storage services.
 
 Flags:
@@ -705,7 +705,7 @@ Usage: upspin [-config=<file>] signup -dir=<addr> -store=<addr> [flags] <usernam
 
 Signup generates an Upspin configuration file and private/public key pair,
 stores them locally, and sends a signup request to the public Upspin key server
-at key.upspin.io. The server will respond by sending a confirmation email to
+at key.github.com/palager/upspin. The server will respond by sending a confirmation email to
 the given email address (or "username").
 
 The email address becomes a username after successful signup but is never
@@ -742,7 +742,7 @@ Flags:
   -help
     	print more information about the command
   -key address
-    	Key server address (default "key.upspin.io:443")
+    	Key server address (default "key.github.com/palager/upspin:443")
   -secrets directory
     	directory to store key pair
   -secretseed string

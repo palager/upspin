@@ -4,27 +4,27 @@
 
 // Storeserver is a wrapper for a store implementation that presents it as an
 // HTTP interface. It provides the common code used by all storeserver commands.
-package storeserver // import "upspin.io/serverutil/storeserver"
+package storeserver // import "github.com/palager/upspin/serverutil/storeserver"
 
 import (
 	"net/http"
 
-	"upspin.io/config"
-	"upspin.io/errors"
-	"upspin.io/flags"
-	"upspin.io/log"
-	"upspin.io/rpc/storeserver"
-	"upspin.io/serverutil/perm"
-	"upspin.io/store/inprocess"
-	"upspin.io/store/server"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/flags"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/rpc/storeserver"
+	"github.com/palager/upspin/serverutil/perm"
+	"github.com/palager/upspin/store/inprocess"
+	"github.com/palager/upspin/store/server"
+	"github.com/palager/upspin/upspin"
 
 	// Directory transports to fetch write permissions.
-	_ "upspin.io/transports"
+	_ "github.com/palager/upspin/transports"
 
 	// Packers for reading Access and Group files.
-	_ "upspin.io/pack/eeintegrity"
-	_ "upspin.io/pack/plain"
+	_ "github.com/palager/upspin/pack/eeintegrity"
+	_ "github.com/palager/upspin/pack/plain"
 )
 
 func Main() (ready chan<- struct{}) {

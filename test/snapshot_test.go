@@ -10,10 +10,10 @@ import (
 	"testing"
 	"time"
 
-	"upspin.io/errors"
-	"upspin.io/path"
-	"upspin.io/test/testenv"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/test/testenv"
+	"github.com/palager/upspin/upspin"
 )
 
 func testSnapshot(t *testing.T, r *testenv.Runner) {

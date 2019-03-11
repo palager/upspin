@@ -9,15 +9,15 @@
 // a request to the underlying server.
 // The caching KeyServer will defer Dialing the underlying service
 // until a Lookup or Put request needs to access that service.
-package usercache // import "upspin.io/key/usercache"
+package usercache // import "github.com/palager/upspin/key/usercache"
 
 import (
 	"sync"
 	"time"
 
-	"upspin.io/cache"
-	"upspin.io/errors"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/cache"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/upspin"
 )
 
 type entry struct {

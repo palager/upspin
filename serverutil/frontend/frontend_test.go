@@ -82,7 +82,7 @@ func TestNoGzip(t *testing.T) {
 	}
 }
 
-const defaultHost = "upspin.io"
+const defaultHost = "github.com/palager/upspin"
 
 func get(t *testing.T, url string) []byte {
 	return getHost(t, defaultHost, url)

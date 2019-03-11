@@ -12,11 +12,11 @@ import (
 	"strings"
 	"sync"
 
-	"upspin.io/bind"
-	"upspin.io/cloud/storage"
-	"upspin.io/cloud/storage/disk"
-	"upspin.io/errors"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/cloud/storage"
+	"github.com/palager/upspin/cloud/storage/disk"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/upspin"
 )
 
 func (s *State) deleteGarbage(args []string) {

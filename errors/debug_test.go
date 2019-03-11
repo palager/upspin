@@ -12,18 +12,18 @@ import (
 	"strings"
 	"testing"
 
-	"upspin.io/errors"
-	"upspin.io/upspin"
-	"upspin.io/valid"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/valid"
 )
 
 var errorLines = strings.Split(strings.TrimSpace(`
-	.*/upspin.io/errors/debug_test.go:\d+: upspin.io/errors_test.func1:
-	.*/upspin.io/errors/debug_test.go:\d+: ...T.func2:
-	.*/upspin.io/errors/debug_test.go:\d+: ...func3:
-	.*/upspin.io/errors/debug_test.go:\d+: ...func4:
-	.*/upspin.io/valid/valid.go:\d+: ...valid.UserName:
-	.*/upspin.io/user/user.go:\d+: ...user.Parse: op: user@home/path: invalid operation:
+	.*/github.com/palager/upspin/errors/debug_test.go:\d+: github.com/palager/upspin/errors_test.func1:
+	.*/github.com/palager/upspin/errors/debug_test.go:\d+: ...T.func2:
+	.*/github.com/palager/upspin/errors/debug_test.go:\d+: ...func3:
+	.*/github.com/palager/upspin/errors/debug_test.go:\d+: ...func4:
+	.*/github.com/palager/upspin/valid/valid.go:\d+: ...valid.UserName:
+	.*/github.com/palager/upspin/user/user.go:\d+: ...user.Parse: op: user@home/path: invalid operation:
 	valid.UserName:
 	user.Parse: user bad-username: user name must contain one @ symbol
 `), "\n")

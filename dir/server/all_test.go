@@ -14,23 +14,23 @@ import (
 	"testing"
 	"time"
 
-	"upspin.io/access"
-	"upspin.io/bind"
-	"upspin.io/config"
-	"upspin.io/dir/server/serverlog"
-	"upspin.io/errors"
-	"upspin.io/factotum"
-	"upspin.io/pack"
-	"upspin.io/path"
-	"upspin.io/test/testutil"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/access"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/dir/server/serverlog"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/factotum"
+	"github.com/palager/upspin/pack"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/test/testutil"
+	"github.com/palager/upspin/upspin"
 
-	_ "upspin.io/pack/ee"
-	_ "upspin.io/pack/eeintegrity"
-	_ "upspin.io/pack/plain"
+	_ "github.com/palager/upspin/pack/ee"
+	_ "github.com/palager/upspin/pack/eeintegrity"
+	_ "github.com/palager/upspin/pack/plain"
 
-	keyserver "upspin.io/key/inprocess"
-	storeserver "upspin.io/store/inprocess"
+	keyserver "github.com/palager/upspin/key/inprocess"
+	storeserver "github.com/palager/upspin/store/inprocess"
 )
 
 func init() {

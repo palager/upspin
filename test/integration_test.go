@@ -10,16 +10,16 @@ import (
 	"fmt"
 	"testing"
 
-	"upspin.io/access"
-	"upspin.io/bind"
-	"upspin.io/errors"
-	"upspin.io/key/usercache"
-	"upspin.io/path"
-	"upspin.io/test/testenv"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/access"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/key/usercache"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/test/testenv"
+	"github.com/palager/upspin/upspin"
 
-	_ "upspin.io/pack/ee"
-	_ "upspin.io/pack/plain"
+	_ "github.com/palager/upspin/pack/ee"
+	_ "github.com/palager/upspin/pack/plain"
 )
 
 const (
@@ -28,9 +28,9 @@ const (
 	contentsOfFile3     = "===PDF PDF PDF=="
 	genericFileContents = "contents"
 	hasLocation         = true
-	ownerName           = "test@upspin.io"
-	snapshotUser        = "test+snapshot@upspin.io"
-	readerName          = "test-friend@upspin.io"
+	ownerName           = "test@github.com/palager/upspin"
+	snapshotUser        = "test+snapshot@github.com/palager/upspin"
+	readerName          = "test-friend@github.com/palager/upspin"
 )
 
 var (
@@ -372,9 +372,9 @@ var integrationTests = []struct {
 const remoteTestMessage = `
 error: cannot find keys for remote test users.
 
-These tests are designed to be run against the test.upspin.io cluster,
+These tests are designed to be run against the test.github.com/palager/upspin cluster,
 which is only accessible by the Upspin core team at Google.
-See upspin.io/key/testdata/remote/README for details.
+See github.com/palager/upspin/key/testdata/remote/README for details.
 
 Run the test suite with -short to skip these tests.
 `

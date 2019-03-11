@@ -7,7 +7,7 @@
 // it cannot import any Upspin packages.
 
 // Package testutil includes utility functions for Upspin tests.
-package testutil // import "upspin.io/test/testutil"
+package testutil // import "github.com/palager/upspin/test/testutil"
 
 import (
 	"go/build"
@@ -18,7 +18,7 @@ import (
 
 // Repo returns the local filename of a file in the Upspin repository.
 func Repo(dir ...string) string {
-	p, err := build.Import("upspin.io", "", build.FindOnly)
+	p, err := build.Import("github.com/palager/upspin", "", build.FindOnly)
 	if err != nil {
 		log.Fatal(err)
 	}

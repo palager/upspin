@@ -4,24 +4,24 @@
 
 // Keyserver is a wrapper for a key implementation that presents it as an HTTP
 // interface.
-package main // import "upspin.io/cmd/keyserver"
+package main // import "github.com/palager/upspin/cmd/keyserver"
 
 import (
 	"flag"
 
-	"upspin.io/factotum"
-	"upspin.io/flags"
-	"upspin.io/log"
-	"upspin.io/serverutil"
-	"upspin.io/serverutil/keyserver"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/factotum"
+	"github.com/palager/upspin/flags"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/serverutil"
+	"github.com/palager/upspin/serverutil/keyserver"
+	"github.com/palager/upspin/upspin"
 
 	// Load required transports
-	_ "upspin.io/key/transports"
+	_ "github.com/palager/upspin/key/transports"
 
 	// Possible storage backends.
-	"upspin.io/cloud/https"
-	_ "upspin.io/cloud/storage/disk"
+	"github.com/palager/upspin/cloud/https"
+	_ "github.com/palager/upspin/cloud/storage/disk"
 )
 
 var (

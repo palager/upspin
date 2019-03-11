@@ -4,7 +4,7 @@
 
 package internal
 
-import "upspin.io/upspin"
+import "github.com/palager/upspin/upspin"
 
 // NewBlockTracker returns a BlockTracker that iterates over the given slice.
 func NewBlockTracker(bs []upspin.DirBlock) BlockTracker {

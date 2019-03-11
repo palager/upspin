@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package testenv // import "upspin.io/test/testenv"
+package testenv // import "github.com/palager/upspin/test/testenv"
 
-import "upspin.io/errors"
+import "github.com/palager/upspin/errors"
 
 // errorMatch is a version of errors.Match that recursively
 // checks interior errors of err2 for the fields in err1.

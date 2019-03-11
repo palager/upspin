@@ -5,15 +5,15 @@
 // Package transports is a helper package that aggregates the store imports.
 // It has no functionality itself; it is meant to be imported, using an "underscore"
 // import, as a convenient way to link with all the transport implementations.
-package transports // import "upspin.io/store/transports"
+package transports // import "github.com/palager/upspin/store/transports"
 
 import (
-	"upspin.io/bind"
-	"upspin.io/store/inprocess"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/store/inprocess"
+	"github.com/palager/upspin/upspin"
 
-	_ "upspin.io/store/remote"
-	_ "upspin.io/store/unassigned"
+	_ "github.com/palager/upspin/store/remote"
+	_ "github.com/palager/upspin/store/unassigned"
 )
 
 func init() {

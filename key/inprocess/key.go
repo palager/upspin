@@ -3,15 +3,15 @@
 // license that can be found in the LICENSE file.
 
 // Package inprocess implements a non-persistent, memory-resident user service.
-package inprocess // import "upspin.io/key/inprocess"
+package inprocess // import "github.com/palager/upspin/key/inprocess"
 
 import (
 	"sync"
 
-	"upspin.io/errors"
-	"upspin.io/upspin"
-	"upspin.io/user"
-	"upspin.io/valid"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/user"
+	"github.com/palager/upspin/valid"
 )
 
 func New() upspin.KeyServer {

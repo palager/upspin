@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package server // import "upspin.io/dir/server"
+package server // import "github.com/palager/upspin/dir/server"
 
 // This file deals with loading Access files and checking access permissions.
 
 import (
 	"time"
 
-	"upspin.io/access"
-	"upspin.io/bind"
-	"upspin.io/client/clientutil"
-	"upspin.io/errors"
-	"upspin.io/log"
-	"upspin.io/path"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/access"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/client/clientutil"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
 )
 
 // accessEntry holds parsed Access files and a sequence number for their entries.

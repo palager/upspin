@@ -9,12 +9,12 @@ import (
 	"os"
 	"testing"
 
-	"upspin.io/cloud/storage"
-	"upspin.io/cloud/storage/storagetest"
-	"upspin.io/errors"
+	"github.com/palager/upspin/cloud/storage"
+	"github.com/palager/upspin/cloud/storage/storagetest"
+	"github.com/palager/upspin/errors"
 
 	// Import needed storage backend.
-	_ "upspin.io/cloud/storage/disk"
+	_ "github.com/palager/upspin/cloud/storage/disk"
 )
 
 const (

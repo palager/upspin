@@ -4,15 +4,15 @@
 
 // Package metric implements routines for generating and saving metrics
 // associated with servers and clients.
-package metric // import "upspin.io/metric"
+package metric // import "github.com/palager/upspin/metric"
 
 import (
 	"sync"
 	"sync/atomic"
 	"time"
 
-	"upspin.io/errors"
-	"upspin.io/log"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/log"
 )
 
 // Metric is a named collection of spans. A span measures time from the beginning of an event

@@ -4,25 +4,25 @@
 
 // Package client implements a simple client service talking to services
 // running anywhere (GCP, InProcess, etc).
-package client // import "upspin.io/client"
+package client // import "github.com/palager/upspin/client"
 
 import (
 	"fmt"
 	"strings"
 
-	"upspin.io/access"
-	"upspin.io/bind"
-	"upspin.io/client/clientutil"
-	"upspin.io/client/file"
-	"upspin.io/errors"
-	"upspin.io/flags"
-	"upspin.io/metric"
-	"upspin.io/pack"
-	"upspin.io/path"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/access"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/client/clientutil"
+	"github.com/palager/upspin/client/file"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/flags"
+	"github.com/palager/upspin/metric"
+	"github.com/palager/upspin/pack"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
 
-	_ "upspin.io/pack/eeintegrity"
-	_ "upspin.io/pack/plain"
+	_ "github.com/palager/upspin/pack/eeintegrity"
+	_ "github.com/palager/upspin/pack/plain"
 )
 
 // Client implements upspin.Client.

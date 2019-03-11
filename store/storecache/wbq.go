@@ -11,11 +11,11 @@ import (
 	"strings"
 	"time"
 
-	"upspin.io/bind"
-	"upspin.io/errors"
-	"upspin.io/log"
-	"upspin.io/serverutil"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/serverutil"
+	"github.com/palager/upspin/upspin"
 )
 
 const (

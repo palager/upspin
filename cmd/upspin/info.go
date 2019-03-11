@@ -12,10 +12,10 @@ import (
 	"text/template"
 	"time"
 
-	"upspin.io/access"
-	"upspin.io/pack"
-	"upspin.io/path"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/access"
+	"github.com/palager/upspin/pack"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
 )
 
 func (s *State) info(args ...string) {
@@ -141,7 +141,7 @@ func (d *infoDirEntry) Hashes() string {
 
 func (d *infoDirEntry) Users(right access.Right) string {
 	usersWithAccess := d.state.usersWithAccess(d.state.Client, d.access, right)
-	// Change "all@upspin.io" back to "All".
+	// Change "all@github.com/palager/upspin" back to "All".
 	for i, user := range usersWithAccess {
 		if user == access.AllUsers {
 			usersWithAccess[i] = "All" // Capitalize it here for clarity.
@@ -366,7 +366,7 @@ func (s *State) checkAccessFile(name upspin.PathName) {
 }
 
 func (s *State) userExists(user upspin.UserName, userSeen map[upspin.UserName]bool) bool {
-	if userSeen[user] || user == access.AllUsers { // all@upspin.io is baked in.
+	if userSeen[user] || user == access.AllUsers { // all@github.com/palager/upspin is baked in.
 		return true // Previous answer will do.
 	}
 	// Ignore wildcards.

@@ -4,7 +4,7 @@
 
 // Package keygen provides functions for generating Upspin key pairs and
 // writing them to files.
-package keygen // import "upspin.io/key/keygen"
+package keygen // import "github.com/palager/upspin/key/keygen"
 
 import (
 	"encoding/binary"
@@ -14,9 +14,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"upspin.io/errors"
-	"upspin.io/key/proquint"
-	"upspin.io/pack/ee"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/key/proquint"
+	"github.com/palager/upspin/pack/ee"
 )
 
 // secret represents the secret seed for a key.

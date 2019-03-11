@@ -7,10 +7,10 @@ package main
 import (
 	"flag"
 
-	"upspin.io/errors"
-	"upspin.io/path"
-	"upspin.io/upspin"
-	"upspin.io/user"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/user"
 )
 
 func (s *State) snapshot(args ...string) {

@@ -10,11 +10,11 @@ import (
 	"fmt"
 	"testing"
 
-	"upspin.io/access"
-	"upspin.io/test/testenv"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/access"
+	"github.com/palager/upspin/test/testenv"
+	"github.com/palager/upspin/upspin"
 
-	_ "upspin.io/dir/unassigned"
+	_ "github.com/palager/upspin/dir/unassigned"
 )
 
 func testReadAccess(t *testing.T, r *testenv.Runner) {
@@ -251,7 +251,7 @@ func testReadAccess(t *testing.T, r *testenv.Runner) {
 
 	// Test *@domain permission.
 	const (
-		wildcardDomain = "l: *@upspin.io\n"
+		wildcardDomain = "l: *@github.com/palager/upspin\n"
 	)
 	r.As(owner)
 	r.Put(publicAccessFile, wildcardDomain)

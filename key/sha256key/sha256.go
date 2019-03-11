@@ -3,13 +3,13 @@
 // license that can be found in the LICENSE file.
 
 // Package sha256key provides access to the hash function used to make content-addressable keys.
-package sha256key // import "upspin.io/key/sha256key"
+package sha256key // import "github.com/palager/upspin/key/sha256key"
 
 import (
 	"crypto/sha256"
 	"fmt"
 
-	"upspin.io/errors"
+	"github.com/palager/upspin/errors"
 )
 
 var (

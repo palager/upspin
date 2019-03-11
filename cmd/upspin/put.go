@@ -7,12 +7,12 @@ package main
 import (
 	"flag"
 
-	"upspin.io/access"
-	"upspin.io/client"
-	"upspin.io/config"
-	"upspin.io/pack"
-	"upspin.io/path"
-	"upspin.io/subcmd"
+	"github.com/palager/upspin/access"
+	"github.com/palager/upspin/client"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/pack"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/subcmd"
 )
 
 func (s *State) put(args ...string) {

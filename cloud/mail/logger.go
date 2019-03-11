@@ -4,7 +4,7 @@
 
 package mail
 
-import "upspin.io/log"
+import "github.com/palager/upspin/log"
 
 // Logger returns a Mail implementation that logs any sent messages to the
 // given Logger.

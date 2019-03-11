@@ -9,12 +9,12 @@ import (
 	"reflect"
 	"testing"
 
-	"upspin.io/cache"
-	"upspin.io/cloud/storage/storagetest"
-	"upspin.io/errors"
-	"upspin.io/factotum"
-	"upspin.io/test/testutil"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/cache"
+	"github.com/palager/upspin/cloud/storage/storagetest"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/factotum"
+	"github.com/palager/upspin/test/testutil"
+	"github.com/palager/upspin/upspin"
 )
 
 const isAdmin = true

@@ -11,23 +11,23 @@ import (
 	"os"
 	"path/filepath"
 
-	"upspin.io/config"
-	"upspin.io/dir/dircache"
-	"upspin.io/flags"
-	"upspin.io/log"
-	"upspin.io/rpc/dirserver"
-	"upspin.io/rpc/local"
-	"upspin.io/rpc/storeserver"
-	"upspin.io/store/storecache"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/dir/dircache"
+	"github.com/palager/upspin/flags"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/rpc/dirserver"
+	"github.com/palager/upspin/rpc/local"
+	"github.com/palager/upspin/rpc/storeserver"
+	"github.com/palager/upspin/store/storecache"
+	"github.com/palager/upspin/upspin"
 
 	// Load required transports
-	_ "upspin.io/transports"
+	_ "github.com/palager/upspin/transports"
 
 	// Load useful packers
-	_ "upspin.io/pack/ee"
-	_ "upspin.io/pack/eeintegrity"
-	_ "upspin.io/pack/plain"
+	_ "github.com/palager/upspin/pack/ee"
+	_ "github.com/palager/upspin/pack/eeintegrity"
+	_ "github.com/palager/upspin/pack/plain"
 )
 
 var (

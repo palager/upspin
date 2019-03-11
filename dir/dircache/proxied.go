@@ -12,13 +12,13 @@ import (
 	"sync"
 	"time"
 
-	"upspin.io/access"
-	"upspin.io/bind"
-	"upspin.io/errors"
-	"upspin.io/log"
-	"upspin.io/path"
-	"upspin.io/upspin"
-	"upspin.io/user"
+	"github.com/palager/upspin/access"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/user"
 )
 
 // proxiedDir contains information about proxied user directories.

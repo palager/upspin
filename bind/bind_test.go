@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"upspin.io/test/testfixtures"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/test/testfixtures"
+	"github.com/palager/upspin/upspin"
 )
 
 func TestSwitch(t *testing.T) {

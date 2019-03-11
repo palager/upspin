@@ -12,9 +12,9 @@ package test
 import (
 	"testing"
 
-	"upspin.io/errors"
-	"upspin.io/test/testenv"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/test/testenv"
+	"github.com/palager/upspin/upspin"
 )
 
 const middleName = "joe@middleman.com" // joe has keys in key/testdata.

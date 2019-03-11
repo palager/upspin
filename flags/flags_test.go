@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"testing"
 
-	"upspin.io/upspin"
+	"github.com/palager/upspin/upspin"
 )
 
 func TestMaxBlockSize(t *testing.T) {

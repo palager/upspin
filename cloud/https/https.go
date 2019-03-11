@@ -3,7 +3,7 @@
 // license that can be found in the LICENSE file.
 
 // Package https provides a helper for starting an HTTPS server.
-package https // import "upspin.io/cloud/https"
+package https // import "github.com/palager/upspin/cloud/https"
 
 import (
 	"crypto/tls"
@@ -16,17 +16,17 @@ import (
 
 	"golang.org/x/crypto/acme/autocert"
 
-	"upspin.io/access"
-	"upspin.io/errors"
-	"upspin.io/flags"
-	"upspin.io/log"
-	"upspin.io/serverutil"
-	"upspin.io/shutdown"
+	"github.com/palager/upspin/access"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/flags"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/serverutil"
+	"github.com/palager/upspin/shutdown"
 )
 
 // Options permits the configuration of TLS certificates for servers running
 // outside GCE. The default is the self-signed certificate in
-// upspin.io/rpc/testdata.
+// github.com/palager/upspin/rpc/testdata.
 type Options struct {
 	// Addr specifies the host and port on which the server should serve
 	// HTTPS requests (or HTTP requests if InsecureHTTP is set).
@@ -71,7 +71,7 @@ type AutocertCache interface {
 
 // ErrAutocertCacheMiss is a copy of the autocert.ErrCacheMiss variable that
 // must be used by any AutocertCache implementations used in the Options
-// struct. This is because the autocert package is vendored by the upspin.io
+// struct. This is because the autocert package is vendored by the github.com/palager/upspin
 // repository, and so an outside implementation that returns ErrCacheMiss from
 // another version of the package will return an error value that is not
 // recognized by the autocert package.
@@ -84,11 +84,11 @@ var defaultOptions = &Options{
 
 var testKeyDir = findTestKeyDir() // Do this just once.
 
-// findTestKeyDir locates the "rpc/testdata" directory within the upspin.io
+// findTestKeyDir locates the "rpc/testdata" directory within the github.com/palager/upspin
 // repository in a Go workspace and returns its absolute path.
-// If the upspin.io repository cannot be found, it returns ".".
+// If the github.com/palager/upspin repository cannot be found, it returns ".".
 func findTestKeyDir() string {
-	p, err := build.Import("upspin.io/rpc/testdata", "", build.FindOnly)
+	p, err := build.Import("github.com/palager/upspin/rpc/testdata", "", build.FindOnly)
 	if err != nil {
 		return "."
 	}
@@ -115,7 +115,7 @@ func (opt *Options) applyDefaults() {
 }
 
 // OptionsFromFlags returns Options derived from the command-line flags present
-// in the upspin.io/flags package.
+// in the github.com/palager/upspin/flags package.
 func OptionsFromFlags() *Options {
 	var hosts []string
 	if host := string(flags.NetAddr); host != "" {

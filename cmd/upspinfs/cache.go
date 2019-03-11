@@ -4,7 +4,7 @@
 
 // +build !windows
 
-package main // import "upspin.io/cmd/upspinfs"
+package main // import "github.com/palager/upspin/cmd/upspinfs"
 
 // Open files and a small cache of previously opened ones are cached
 // locally in disk files. File blocks are downloaded on demand when
@@ -30,15 +30,15 @@ import (
 
 	"bazil.org/fuse"
 
-	lrucache "upspin.io/cache"
-	"upspin.io/client"
-	"upspin.io/client/clientutil"
-	os "upspin.io/cmd/upspinfs/internal/ose"
-	"upspin.io/errors"
-	"upspin.io/log"
-	"upspin.io/pack"
-	"upspin.io/path"
-	"upspin.io/upspin"
+	lrucache "github.com/palager/upspin/cache"
+	"github.com/palager/upspin/client"
+	"github.com/palager/upspin/client/clientutil"
+	os "github.com/palager/upspin/cmd/upspinfs/internal/ose"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/pack"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
 )
 
 // Names of cache files are:

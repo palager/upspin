@@ -11,19 +11,19 @@ import (
 	"testing"
 	"time"
 
-	"upspin.io/bind"
-	"upspin.io/config"
-	"upspin.io/dir/server/serverlog"
-	"upspin.io/errors"
-	"upspin.io/factotum"
-	"upspin.io/path"
-	"upspin.io/test/testutil"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/dir/server/serverlog"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/factotum"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/test/testutil"
+	"github.com/palager/upspin/upspin"
 
-	keyserver "upspin.io/key/inprocess"
-	storeserver "upspin.io/store/inprocess"
+	keyserver "github.com/palager/upspin/key/inprocess"
+	storeserver "github.com/palager/upspin/store/inprocess"
 
-	_ "upspin.io/pack/ee"
+	_ "github.com/palager/upspin/pack/ee"
 )
 
 var errNotExist = errors.E(errors.NotExist)

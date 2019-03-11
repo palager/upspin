@@ -5,7 +5,7 @@
 // Package testfixtures implements dummies for StoreServers, DirServers and KeyServers for tests.
 package testfixtures
 
-import "upspin.io/upspin"
+import "github.com/palager/upspin/upspin"
 
 // DummyKey is an implementation of upspin.KeyServer that does nothing.
 type DummyKey struct {

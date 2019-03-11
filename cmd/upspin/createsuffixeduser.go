@@ -13,12 +13,12 @@ import (
 	"path/filepath"
 	"strings"
 
-	"upspin.io/config"
-	"upspin.io/flags"
-	"upspin.io/key/keygen"
-	"upspin.io/pack"
-	"upspin.io/upspin"
-	"upspin.io/user"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/flags"
+	"github.com/palager/upspin/key/keygen"
+	"github.com/palager/upspin/pack"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/user"
 )
 
 func (s *State) createsuffixeduser(args ...string) {

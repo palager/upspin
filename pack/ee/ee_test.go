@@ -13,16 +13,16 @@ import (
 	"strings"
 	"testing"
 
-	"upspin.io/bind"
-	"upspin.io/config"
-	"upspin.io/errors"
-	"upspin.io/factotum"
-	"upspin.io/pack"
-	"upspin.io/pack/ee"
-	"upspin.io/pack/internal/packtest"
-	"upspin.io/test/testfixtures"
-	"upspin.io/test/testutil"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/factotum"
+	"github.com/palager/upspin/pack"
+	"github.com/palager/upspin/pack/ee"
+	"github.com/palager/upspin/pack/internal/packtest"
+	"github.com/palager/upspin/test/testfixtures"
+	"github.com/palager/upspin/test/testutil"
+	"github.com/palager/upspin/upspin"
 )
 
 const (
@@ -120,7 +120,7 @@ func testPackNameAndUnpack(t *testing.T, cfg upspin.Config, packer upspin.Packer
 
 func TestPack256(t *testing.T) {
 	const (
-		user upspin.UserName = "joe@upspin.io"
+		user upspin.UserName = "joe@github.com/palager/upspin"
 		name                 = upspin.PathName(user + "/file/of/user.256")
 		text                 = "this is some text 256"
 	)
@@ -130,7 +130,7 @@ func TestPack256(t *testing.T) {
 
 func TestName256(t *testing.T) {
 	const (
-		user    upspin.UserName = "joe@upspin.io"
+		user    upspin.UserName = "joe@github.com/palager/upspin"
 		name                    = upspin.PathName(user + "/file/of/user.256")
 		newName                 = upspin.PathName(user + "/file/of/user.256.2")
 		text                    = "this is some text 256"
@@ -141,7 +141,7 @@ func TestName256(t *testing.T) {
 
 func benchmarkPack(b *testing.B, curveName string, fileSize int, unpack bool) {
 	b.SetBytes(int64(fileSize))
-	const user upspin.UserName = "joe@upspin.io"
+	const user upspin.UserName = "joe@github.com/palager/upspin"
 	data := make([]byte, fileSize)
 	n, err := rand.Read(data)
 	if err != nil {
@@ -215,9 +215,9 @@ func TestSharing(t *testing.T) {
 	// TODO This could be cleaned up to be more like TestCountersign.
 	// joe@google.com is the owner of a file that is shared with bob@foo.com.
 	const (
-		joesUserName   upspin.UserName = "joe@upspin.io"
+		joesUserName   upspin.UserName = "joe@github.com/palager/upspin"
 		pathName                       = upspin.PathName(joesUserName + "/secret_file_shared_with_bob")
-		bobsUserName   upspin.UserName = "bob@upspin.io"
+		bobsUserName   upspin.UserName = "bob@github.com/palager/upspin"
 		carlasUserName upspin.UserName = "carla@baz.edu"
 		text                           = "bob, here's the secret file. Sincerely, The Joe."
 	)
@@ -271,9 +271,9 @@ func TestSharing(t *testing.T) {
 func TestBadSharing(t *testing.T) {
 	// joe@google.com is the owner of a file that is attempting to be shared with bob@foo.com, but share wasn't called.
 	const (
-		joesUserName upspin.UserName = "joe@upspin.io"
+		joesUserName upspin.UserName = "joe@github.com/palager/upspin"
 		pathName                     = upspin.PathName(joesUserName + "/secret_file_shared_with_bob")
-		bobsUserName upspin.UserName = "bob@upspin.io"
+		bobsUserName upspin.UserName = "bob@github.com/palager/upspin"
 		text                         = "bob, here's the secret file. sincerely, joe."
 	)
 	cfg, packer := setup(joesUserName)
@@ -307,8 +307,8 @@ func TestBadSharing(t *testing.T) {
 
 func TestCountersign(t *testing.T) {
 	const (
-		joeUserName upspin.UserName = "joe@upspin.io"
-		bobUserName upspin.UserName = "bob@upspin.io"
+		joeUserName upspin.UserName = "joe@github.com/palager/upspin"
+		bobUserName upspin.UserName = "bob@github.com/palager/upspin"
 		pathName                    = upspin.PathName(joeUserName + "/secret_for_bob")
 		text                        = "bob, here's the secret file. Sincerely, The Joe."
 	)
@@ -370,8 +370,8 @@ func cfgFor(name upspin.UserName) (upspin.Config, upspin.Packer) {
 func setup(name upspin.UserName) (upspin.Config, upspin.Packer) {
 	cfg, packer := cfgFor(name)
 
-	joeCfg, _ := cfgFor("joe@upspin.io")
-	bobCfg, _ := cfgFor("bob@upspin.io")
+	joeCfg, _ := cfgFor("joe@github.com/palager/upspin")
+	bobCfg, _ := cfgFor("bob@github.com/palager/upspin")
 	mockKey := &dummyKey{
 		userToMatch: []upspin.UserName{
 			joeCfg.UserName(),
@@ -416,7 +416,7 @@ func (d *dummyKey) Dial(cc upspin.Config, e upspin.Endpoint) (upspin.Service, er
 }
 
 func TestMultiBlockRoundTrip(t *testing.T) {
-	const userName = upspin.UserName("aly@upspin.io")
+	const userName = upspin.UserName("aly@github.com/palager/upspin")
 	cfg, packer := setup(userName)
 	packtest.TestMultiBlockRoundTrip(t, cfg, packer, userName)
 }
@@ -426,7 +426,7 @@ func TestConsistentKeyStream(t *testing.T) {
 	// generates the same ciphertext when all blocks are concatenated.
 	blockSizes := []int{777, 1024, 4001, 92341, 1024 * 1024}
 	const (
-		user upspin.UserName = "joe@upspin.io"
+		user upspin.UserName = "joe@github.com/palager/upspin"
 		name                 = upspin.PathName(user + "/file/of/user")
 	)
 
@@ -531,8 +531,8 @@ func TestConsistentKeyStream(t *testing.T) {
 
 func TestAllReaders(t *testing.T) {
 	const (
-		userName  = upspin.UserName("joe@upspin.io")
-		otherName = upspin.UserName("aly@upspin.io")
+		userName  = upspin.UserName("joe@github.com/palager/upspin")
+		otherName = upspin.UserName("aly@github.com/palager/upspin")
 		pathName  = upspin.PathName(userName + "/dir/file")
 		content   = "Some text"
 	)

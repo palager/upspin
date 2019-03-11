@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"strings"
 
-	"upspin.io/upspin"
+	"github.com/palager/upspin/upspin"
 )
 
 func (s *State) ls(args ...string) {

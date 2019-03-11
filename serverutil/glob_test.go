@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
-	"upspin.io/errors"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/upspin"
 )
 
 var (

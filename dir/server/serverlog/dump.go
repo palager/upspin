@@ -18,9 +18,9 @@ import (
 	"strconv"
 	"strings"
 
-	"upspin.io/errors"
-	"upspin.io/log"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/upspin"
 )
 
 func main() {

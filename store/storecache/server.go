@@ -10,9 +10,9 @@ import (
 	"fmt"
 	"path"
 
-	"upspin.io/errors"
-	"upspin.io/log"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/upspin"
 )
 
 // server implements upspin.Storeserver.

@@ -19,11 +19,11 @@ import (
 
 	"flag"
 
-	"upspin.io/access"
-	"upspin.io/errors"
-	"upspin.io/path"
-	"upspin.io/subcmd"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/access"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/subcmd"
+	"github.com/palager/upspin/upspin"
 )
 
 func (s *State) tar(args ...string) {

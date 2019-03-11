@@ -3,7 +3,7 @@
 // license that can be found in the LICENSE file.
 
 // Package proquint converts uint16 to/from pronounceable five letters.
-package proquint // import "upspin.io/key/proquint"
+package proquint // import "github.com/palager/upspin/key/proquint"
 
 import "bytes"
 

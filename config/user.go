@@ -4,7 +4,7 @@
 
 package config
 
-import "upspin.io/upspin"
+import "github.com/palager/upspin/upspin"
 
 // User returns an upspin.User record for the user in the given configuration.
 func User(ctx upspin.Config) *upspin.User {

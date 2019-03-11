@@ -9,11 +9,11 @@ import (
 	"io"
 	"log"
 
-	"upspin.io/client"
-	"upspin.io/config"
-	"upspin.io/pack"
-	"upspin.io/subcmd"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/client"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/pack"
+	"github.com/palager/upspin/subcmd"
+	"github.com/palager/upspin/upspin"
 )
 
 func (s *State) repack(args ...string) {

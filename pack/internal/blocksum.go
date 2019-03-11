@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package internal // import "upspin.io/pack/internal"
+package internal // import "github.com/palager/upspin/pack/internal"
 
 import (
 	"crypto/sha256"
 
-	"upspin.io/upspin"
+	"github.com/palager/upspin/upspin"
 )
 
 // BlockSum returns the SHA256 hash of the given DirBlocks' Packdata.

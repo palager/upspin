@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package rpc // import "upspin.io/rpc"
+package rpc // import "github.com/palager/upspin/rpc"
 
 import (
 	"bytes"
@@ -16,11 +16,11 @@ import (
 	"sync"
 	"time"
 
-	"upspin.io/bind"
-	"upspin.io/errors"
-	"upspin.io/rpc/local"
-	"upspin.io/serverutil"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/rpc/local"
+	"github.com/palager/upspin/serverutil"
+	"github.com/palager/upspin/upspin"
 
 	pb "github.com/golang/protobuf/proto"
 )

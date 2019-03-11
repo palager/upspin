@@ -11,12 +11,12 @@ import (
 	"os"
 	"path/filepath"
 
-	"upspin.io/client"
-	"upspin.io/config"
-	"upspin.io/errors"
-	"upspin.io/subcmd"
-	"upspin.io/upspin"
-	"upspin.io/user"
+	"github.com/palager/upspin/client"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/subcmd"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/user"
 )
 
 func (s *State) setupwriters(args ...string) {

@@ -12,15 +12,15 @@ import (
 	"strings"
 	"testing"
 
-	"upspin.io/bind"
-	"upspin.io/config"
-	"upspin.io/errors"
-	"upspin.io/factotum"
-	"upspin.io/pack"
-	"upspin.io/pack/internal/packtest"
-	"upspin.io/test/testfixtures"
-	"upspin.io/test/testutil"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/factotum"
+	"github.com/palager/upspin/pack"
+	"github.com/palager/upspin/pack/internal/packtest"
+	"github.com/palager/upspin/test/testfixtures"
+	"github.com/palager/upspin/test/testutil"
+	"github.com/palager/upspin/upspin"
 )
 
 const (
@@ -118,7 +118,7 @@ func testPackNameAndUnpack(t *testing.T, cfg upspin.Config, packer upspin.Packer
 
 func TestPack256(t *testing.T) {
 	const (
-		user upspin.UserName = "joe@upspin.io"
+		user upspin.UserName = "joe@github.com/palager/upspin"
 		name                 = upspin.PathName(user + "/file/of/user.256")
 		text                 = "this is some text 256"
 	)
@@ -128,7 +128,7 @@ func TestPack256(t *testing.T) {
 
 func TestName256(t *testing.T) {
 	const (
-		user    upspin.UserName = "joe@upspin.io"
+		user    upspin.UserName = "joe@github.com/palager/upspin"
 		name                    = upspin.PathName(user + "/file/of/user.256")
 		newName                 = upspin.PathName(user + "/file/of/user.256.2")
 		text                    = "this is some text 256"
@@ -139,7 +139,7 @@ func TestName256(t *testing.T) {
 
 func benchmarkPack(b *testing.B, curveName string, fileSize int, unpack bool) {
 	b.SetBytes(int64(fileSize))
-	const user upspin.UserName = "joe@upspin.io"
+	const user upspin.UserName = "joe@github.com/palager/upspin"
 	data := make([]byte, fileSize)
 	n, err := rand.Read(data)
 	if err != nil {
@@ -287,7 +287,7 @@ func (d *dummyKey) Dial(cc upspin.Config, e upspin.Endpoint) (upspin.Service, er
 }
 
 func TestMultiBlockRoundTrip(t *testing.T) {
-	const userName = upspin.UserName("aly@upspin.io")
+	const userName = upspin.UserName("aly@github.com/palager/upspin")
 	cfg, packer := setup(userName)
 	packtest.TestMultiBlockRoundTrip(t, cfg, packer, userName)
 }

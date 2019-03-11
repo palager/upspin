@@ -10,8 +10,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"upspin.io/config"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/upspin"
 )
 
 func testingUserLookup(who string) (*user.User, error) {

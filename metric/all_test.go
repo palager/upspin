@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"testing"
 
-	"upspin.io/errors"
+	"github.com/palager/upspin/errors"
 )
 
 func TestAll(t *testing.T) {

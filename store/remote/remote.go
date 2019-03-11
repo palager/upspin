@@ -4,7 +4,7 @@
 
 // Package remote implements an inprocess store server that uses RPC to
 // connect to a remote store server.
-package remote // import "upspin.io/store/remote"
+package remote // import "github.com/palager/upspin/store/remote"
 
 import (
 	"fmt"
@@ -14,12 +14,12 @@ import (
 	"strings"
 	"sync"
 
-	"upspin.io/bind"
-	"upspin.io/errors"
-	"upspin.io/log"
-	"upspin.io/rpc"
-	"upspin.io/upspin"
-	"upspin.io/upspin/proto"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/rpc"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/upspin/proto"
 )
 
 // dialConfig contains the destination and authenticated user of the dial.

@@ -3,14 +3,14 @@
 // license that can be found in the LICENSE file.
 
 // Package pack provides the registry for implementations of Packing algorithms.
-package pack // import "upspin.io/pack"
+package pack // import "github.com/palager/upspin/pack"
 
 import (
 	"fmt"
 	"sync"
 
-	"upspin.io/errors"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/upspin"
 )
 
 var (

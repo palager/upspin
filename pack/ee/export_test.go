@@ -7,7 +7,7 @@ package ee
 import (
 	"crypto/cipher"
 
-	"upspin.io/upspin"
+	"github.com/palager/upspin/upspin"
 )
 
 // Exported for testing only.

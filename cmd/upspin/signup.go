@@ -14,19 +14,19 @@ import (
 	"path/filepath"
 	"text/template"
 
-	"upspin.io/config"
-	"upspin.io/flags"
-	"upspin.io/serverutil/signup"
-	"upspin.io/subcmd"
-	"upspin.io/upspin"
-	"upspin.io/user"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/flags"
+	"github.com/palager/upspin/serverutil/signup"
+	"github.com/palager/upspin/subcmd"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/user"
 )
 
 func (s *State) signup(args ...string) {
 	const help = `
 Signup generates an Upspin configuration file and private/public key pair,
 stores them locally, and sends a signup request to the public Upspin key server
-at key.upspin.io. The server will respond by sending a confirmation email to
+at key.github.com/palager/upspin. The server will respond by sending a confirmation email to
 the given email address (or "username").
 
 The email address becomes a username after successful signup but is never

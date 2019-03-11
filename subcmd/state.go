@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package subcmd // import "upspin.io/subcmd"
+package subcmd // import "github.com/palager/upspin/subcmd"
 
 import (
 	"fmt"
 	"io"
 	"os"
 
-	"upspin.io/bind"
-	"upspin.io/client"
-	"upspin.io/shutdown"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/client"
+	"github.com/palager/upspin/shutdown"
+	"github.com/palager/upspin/upspin"
 )
 
 // State describes the state of a subcommand.

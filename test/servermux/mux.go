@@ -7,18 +7,18 @@
 // multiple concrete instances/implementations.
 // They are muxed by the NetAddr in the Endpoint,
 // which can be an arbitrary string.
-package servermux // import "upspin.io/test/servermux"
+package servermux // import "github.com/palager/upspin/test/servermux"
 
 import (
 	"fmt"
 	"sync"
 
-	"upspin.io/errors"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/upspin"
 
-	dirserver "upspin.io/dir/unassigned"
-	keyserver "upspin.io/key/unassigned"
-	storeserver "upspin.io/store/unassigned"
+	dirserver "github.com/palager/upspin/dir/unassigned"
+	keyserver "github.com/palager/upspin/key/unassigned"
+	storeserver "github.com/palager/upspin/store/unassigned"
 )
 
 // NewKey creates a new muxing KeyServer and returns

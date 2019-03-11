@@ -15,8 +15,8 @@ import (
 	"strings"
 	"testing"
 
-	"upspin.io/upbox"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/upbox"
+	"github.com/palager/upspin/upspin"
 )
 
 var allCmdTests = []*[]cmdTest{

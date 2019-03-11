@@ -16,11 +16,11 @@ import (
 	"strings"
 	"sync"
 
-	"upspin.io/cloud/storage"
-	"upspin.io/errors"
-	"upspin.io/log"
-	"upspin.io/upspin"
-	"upspin.io/valid"
+	"github.com/palager/upspin/cloud/storage"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/valid"
 )
 
 // User holds the log state for a single user.

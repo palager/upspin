@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package server // import "upspin.io/key/server"
+package server // import "github.com/palager/upspin/key/server"
 
 import (
 	"bytes"
@@ -12,9 +12,9 @@ import (
 	"sync"
 	"time"
 
-	"upspin.io/cloud/storage"
-	"upspin.io/errors"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/cloud/storage"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/upspin"
 )
 
 // Logger returns KeyServer logs for auditing purposes.

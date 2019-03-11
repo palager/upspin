@@ -10,7 +10,7 @@ RPC wire protocol
 The protocol for a particular method is to send an HTTP request with the
 appropriate request message to an "api" URL with the server type and method
 name; the response will then be returned. Both request and response are
-sent as binary protocol buffers, as declared by upspin.io/upspin/proto. The
+sent as binary protocol buffers, as declared by github.com/palager/upspin/upspin/proto. The
 encoding procedure is described in more detail below.
 
 As an example, to call the Put method of the Store server running at
@@ -67,8 +67,8 @@ Encoding
 
 The arguments to each method, and the returned values, are encoded as
 protocol buffers at the top level. These protocol buffers are declared in
-the package upspin.io/upspin/proto and its .proto definition file,
-upspin.io/upspin/proto/upspin.proto.
+the package github.com/palager/upspin/upspin/proto and its .proto definition file,
+github.com/palager/upspin/upspin/proto/upspin.proto.
 
 Unlike some other systems that use protocol buffers, Upspin does not use
 the types defined in upspin.proto internally. The protocol buffer types are
@@ -82,13 +82,13 @@ here as they are basic types in both Go and protocol buffers.)
 
 The structured types Endpoint, Location, Refdata and User themselves
 contain only scalar types and so are converted field by field. There are
-helper functions in the upspin.io/upspin/proto package to automate the
+helper functions in the github.com/palager/upspin/upspin/proto package to automate the
 conversion of these types. For instance, the function proto.UpspinLocations
 converts from a slice of protocol buffer Location structs to a slice of the
 internal type, upspin.Location.
 
 The DirEntry type and its component DirBlock are treated a little
-differently. In the upspin.io/upspin package, which defines these types,
+differently. In the github.com/palager/upspin/upspin package, which defines these types,
 there are Marshal and Unmarshal methods that encode and decode these types
 to byte slices. (The details of these encodings are listed below.) Thus
 within the protocol buffer types, these appear as proto type "bytes".

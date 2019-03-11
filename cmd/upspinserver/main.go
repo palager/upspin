@@ -5,14 +5,14 @@
 // Command upspinserver is a combined DirServer and StoreServer for use on
 // stand-alone machines. It provides only the production implementations of the
 // dir and store servers (dir/server and store/server).
-package main // import "upspin.io/cmd/upspinserver"
+package main // import "github.com/palager/upspin/cmd/upspinserver"
 
 import (
-	"upspin.io/cloud/https"
-	"upspin.io/serverutil/upspinserver"
+	"github.com/palager/upspin/cloud/https"
+	"github.com/palager/upspin/serverutil/upspinserver"
 
 	// Storage implementation.
-	_ "upspin.io/cloud/storage/disk"
+	_ "github.com/palager/upspin/cloud/storage/disk"
 )
 
 func main() {

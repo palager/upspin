@@ -13,9 +13,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"upspin.io/errors"
-	"upspin.io/key/keygen"
-	"upspin.io/subcmd"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/key/keygen"
+	"github.com/palager/upspin/subcmd"
 )
 
 func (s *State) keygen(args ...string) {

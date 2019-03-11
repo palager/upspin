@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"upspin.io/upspin"
+	"github.com/palager/upspin/upspin"
 )
 
 func TestNewFromDir(t *testing.T) {

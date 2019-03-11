@@ -12,7 +12,7 @@ import (
 	"strings"
 	"testing"
 
-	"upspin.io/key/keygen"
+	"github.com/palager/upspin/key/keygen"
 )
 
 // Round 1.

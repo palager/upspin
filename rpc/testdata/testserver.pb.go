@@ -19,7 +19,7 @@ package prototest
 import proto "github.com/golang/protobuf/proto"
 import fmt "fmt"
 import math "math"
-import _ "upspin.io/upspin/proto"
+import _ "github.com/palager/upspin/upspin/proto"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal

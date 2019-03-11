@@ -15,14 +15,14 @@ import (
 	"sort"
 	"strings"
 
-	"upspin.io/access"
-	"upspin.io/errors"
-	"upspin.io/factotum"
-	"upspin.io/log"
-	"upspin.io/pack"
-	"upspin.io/path"
-	"upspin.io/subcmd"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/access"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/factotum"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/pack"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/subcmd"
+	"github.com/palager/upspin/upspin"
 )
 
 func (s *State) share(args ...string) {

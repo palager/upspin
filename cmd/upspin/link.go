@@ -7,7 +7,7 @@ package main
 import (
 	"flag"
 
-	"upspin.io/upspin"
+	"github.com/palager/upspin/upspin"
 )
 
 func (s *State) link(args ...string) {

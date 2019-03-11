@@ -13,8 +13,8 @@ import (
 	"sync"
 	"time"
 
-	"upspin.io/path"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
 )
 
 // This file implements the directory scan. Because the network time of flight is

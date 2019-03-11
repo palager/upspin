@@ -7,8 +7,8 @@ package valid
 import (
 	"testing"
 
-	"upspin.io/access"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/access"
+	"github.com/palager/upspin/upspin"
 )
 
 // We use path.UserAndDomain and expect it to do most of the testing for us.
@@ -70,13 +70,13 @@ func TestUser(t *testing.T) {
 			Dirs: []upspin.Endpoint{
 				{
 					Transport: upspin.Remote,
-					NetAddr:   "dir.upspin.io:443",
+					NetAddr:   "dir.github.com/palager/upspin:443",
 				},
 			},
 			Stores: []upspin.Endpoint{
 				{
 					Transport: upspin.Remote,
-					NetAddr:   "store.upspin.io:443",
+					NetAddr:   "store.github.com/palager/upspin:443",
 				},
 			},
 			PublicKey: "this is a key",
@@ -110,7 +110,7 @@ func TestDirBlock(t *testing.T) {
 			Location: upspin.Location{
 				Endpoint: upspin.Endpoint{
 					Transport: upspin.Remote,
-					NetAddr:   "store.upspin.io:443",
+					NetAddr:   "store.github.com/palager/upspin:443",
 				},
 				Reference: "a block",
 			},
@@ -152,7 +152,7 @@ func TestEndpoint(t *testing.T) {
 	restore := func() {
 		endpoint = upspin.Endpoint{
 			Transport: upspin.Remote,
-			NetAddr:   "store.upspin.io:443",
+			NetAddr:   "store.github.com/palager/upspin:443",
 		}
 	}
 	restore()
@@ -183,7 +183,7 @@ func TestDirEntry(t *testing.T) {
 		Location: upspin.Location{
 			Endpoint: upspin.Endpoint{
 				Transport: upspin.Remote,
-				NetAddr:   "store.upspin.io:443",
+				NetAddr:   "store.github.com/palager/upspin:443",
 			},
 			Reference: "a block",
 		},
@@ -194,7 +194,7 @@ func TestDirEntry(t *testing.T) {
 		Location: upspin.Location{
 			Endpoint: upspin.Endpoint{
 				Transport: upspin.Remote,
-				NetAddr:   "store.upspin.io:443",
+				NetAddr:   "store.github.com/palager/upspin:443",
 			},
 			Reference: "a block",
 		},

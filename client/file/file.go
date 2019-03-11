@@ -3,15 +3,15 @@
 // license that can be found in the LICENSE file.
 
 // Package file implements the File interface used in client.Open and client.Create.
-package file // import "upspin.io/client/file"
+package file // import "github.com/palager/upspin/client/file"
 
 import (
 	"io"
 
-	"upspin.io/client/clientutil"
-	"upspin.io/errors"
-	"upspin.io/pack"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/client/clientutil"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/pack"
+	"github.com/palager/upspin/upspin"
 )
 
 // maxInt is the int64 representation of the maximum value of an int.

@@ -223,7 +223,7 @@ func TestMarshalBigDirBlock(t *testing.T) {
 		Location: Location{
 			Endpoint: Endpoint{
 				Transport: Remote,
-				NetAddr:   "upspin.io",
+				NetAddr:   "github.com/palager/upspin",
 			},
 			Reference: "foo",
 		},
@@ -323,7 +323,7 @@ func TestUnmarshalBigDirBlock(t *testing.T) {
 		Location: Location{
 			Endpoint: Endpoint{
 				Transport: Remote,
-				NetAddr:   "upspin.io",
+				NetAddr:   "github.com/palager/upspin",
 			},
 			Reference: "foo",
 		},

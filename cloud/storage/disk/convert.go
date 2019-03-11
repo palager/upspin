@@ -15,7 +15,7 @@
 // must be distinct directories.
 //
 // For details about the encodings see
-//	upspin.io/cloud/storage/disk/internal/local/path.go.
+//	github.com/palager/upspin/cloud/storage/disk/internal/local/path.go.
 package main
 
 import (
@@ -28,7 +28,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"upspin.io/cloud/storage/disk/internal/local"
+	"github.com/palager/upspin/cloud/storage/disk/internal/local"
 )
 
 var (

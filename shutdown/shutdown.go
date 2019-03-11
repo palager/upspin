@@ -4,7 +4,7 @@
 
 // Package shutdown provides a mechanism for registering handlers to be called
 // on process shutdown.
-package shutdown // import "upspin.io/shutdown"
+package shutdown // import "github.com/palager/upspin/shutdown"
 
 import (
 	"fmt"
@@ -14,7 +14,7 @@ import (
 	"syscall"
 	"time"
 
-	"upspin.io/log"
+	"github.com/palager/upspin/log"
 )
 
 // GracePeriod specifies the maximum amount of time during which all shutdown

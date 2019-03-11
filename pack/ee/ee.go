@@ -24,15 +24,15 @@ import (
 
 	"golang.org/x/crypto/hkdf"
 
-	"upspin.io/bind"
-	"upspin.io/errors"
-	"upspin.io/factotum"
-	"upspin.io/log"
-	"upspin.io/pack"
-	"upspin.io/pack/internal"
-	"upspin.io/pack/packutil"
-	"upspin.io/path"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/factotum"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/pack"
+	"github.com/palager/upspin/pack/internal"
+	"github.com/palager/upspin/pack/packutil"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
 )
 
 type keyHashArray [sha256.Size]byte // sometimes we need the array

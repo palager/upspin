@@ -3,7 +3,7 @@
 // license that can be found in the LICENSE file.
 
 // Package packtest provides common functionality used by packer tests.
-package packtest // import "upspin.io/pack/internal/packtest"
+package packtest // import "github.com/palager/upspin/pack/internal/packtest"
 
 import (
 	"bytes"
@@ -14,7 +14,7 @@ import (
 	mRand "math/rand"
 	"testing"
 
-	"upspin.io/upspin"
+	"github.com/palager/upspin/upspin"
 )
 
 type fakeStore map[upspin.Reference][]byte

@@ -3,15 +3,15 @@
 // license that can be found in the LICENSE file.
 
 // Package serverutil provides helper functions for Upspin servers.
-package serverutil // import "upspin.io/serverutil"
+package serverutil // import "github.com/palager/upspin/serverutil"
 
 import (
 	goPath "path"
 	"strings"
 
-	"upspin.io/errors"
-	"upspin.io/path"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
 )
 
 // ListFunc lists the entries in the directory specified by path.

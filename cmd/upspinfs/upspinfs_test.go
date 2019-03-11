@@ -23,18 +23,18 @@ import (
 
 	"bazil.org/fuse"
 
-	"upspin.io/bind"
-	"upspin.io/client"
-	"upspin.io/config"
-	"upspin.io/factotum"
-	"upspin.io/log"
-	"upspin.io/path"
-	"upspin.io/test/testutil"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/client"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/factotum"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/test/testutil"
+	"github.com/palager/upspin/upspin"
 
-	dirserver "upspin.io/dir/inprocess"
-	keyserver "upspin.io/key/inprocess"
-	storeserver "upspin.io/store/inprocess"
+	dirserver "github.com/palager/upspin/dir/inprocess"
+	keyserver "github.com/palager/upspin/key/inprocess"
+	storeserver "github.com/palager/upspin/store/inprocess"
 )
 
 var testConfig struct {

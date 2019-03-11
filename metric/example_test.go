@@ -1,6 +1,6 @@
 package metric_test
 
-import "upspin.io/metric"
+import "github.com/palager/upspin/metric"
 
 func ExampleMetric() {
 	// In method Lookup:

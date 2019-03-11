@@ -4,7 +4,7 @@
 
 // Package flags defines command-line flags to make them consistent between binaries.
 // Not all flags make sense for all binaries.
-package flags // import "upspin.io/flags"
+package flags // import "github.com/palager/upspin/flags"
 
 import (
 	"flag"
@@ -14,9 +14,9 @@ import (
 	"strconv"
 	"strings"
 
-	"upspin.io/config"
-	"upspin.io/log"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/upspin"
 )
 
 // flagVar represents a flag in this package.

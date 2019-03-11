@@ -12,15 +12,15 @@ import (
 
 	pb "github.com/golang/protobuf/proto"
 
-	"upspin.io/cache"
-	"upspin.io/cloud/https"
-	"upspin.io/config"
-	"upspin.io/errors"
-	"upspin.io/factotum"
-	"upspin.io/log"
-	prototest "upspin.io/rpc/testdata"
-	"upspin.io/test/testutil"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/cache"
+	"github.com/palager/upspin/cloud/https"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/factotum"
+	"github.com/palager/upspin/log"
+	prototest "github.com/palager/upspin/rpc/testdata"
+	"github.com/palager/upspin/test/testutil"
+	"github.com/palager/upspin/upspin"
 )
 
 var (
@@ -57,7 +57,7 @@ func startServer(t *testing.T) (port string) {
 		t.Fatal(err)
 	}
 
-	cfg := config.SetUserName(config.New(), "server@upspin.io")
+	cfg := config.SetUserName(config.New(), "server@github.com/palager/upspin")
 	cfg = config.SetKeyEndpoint(cfg, upspin.Endpoint{Transport: upspin.InProcess})
 	http.Handle("/api/Server/", NewServer(cfg, Service{
 		Name: "Server",

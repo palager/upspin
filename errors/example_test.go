@@ -9,8 +9,8 @@ package errors_test
 import (
 	"fmt"
 
-	"upspin.io/errors"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/upspin"
 )
 
 func ExampleError() {

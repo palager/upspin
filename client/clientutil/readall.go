@@ -4,15 +4,15 @@
 
 // Package clientutil implements common utilities shared by clients and those
 // who act as clients, such as a DirServer being a client of a StoreServer.
-package clientutil // import "upspin.io/client/clientutil"
+package clientutil // import "github.com/palager/upspin/client/clientutil"
 
 import (
-	"upspin.io/access"
-	"upspin.io/bind"
-	"upspin.io/errors"
-	"upspin.io/pack"
-	"upspin.io/path"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/access"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/pack"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
 )
 
 // ReadAll reads the entire contents of a DirEntry. The reader must have

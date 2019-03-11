@@ -4,27 +4,27 @@
 
 // Keyserver is a wrapper for a key implementation that presents it as an HTTP
 // interface. It provides the common code used by all keyserver commands.
-package keyserver // import "upspin.io/serverutil/keyserver"
+package keyserver // import "github.com/palager/upspin/serverutil/keyserver"
 
 import (
 	"flag"
 	"io/ioutil"
 	"net/http"
 
-	"upspin.io/cloud/mail"
-	"upspin.io/cloud/mail/sendgrid"
-	"upspin.io/config"
-	"upspin.io/errors"
-	"upspin.io/flags"
-	"upspin.io/key/inprocess"
-	"upspin.io/key/server"
-	"upspin.io/log"
-	"upspin.io/rpc/keyserver"
-	"upspin.io/serverutil/signup"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/cloud/mail"
+	"github.com/palager/upspin/cloud/mail/sendgrid"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/flags"
+	"github.com/palager/upspin/key/inprocess"
+	"github.com/palager/upspin/key/server"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/rpc/keyserver"
+	"github.com/palager/upspin/serverutil/signup"
+	"github.com/palager/upspin/upspin"
 
 	// Load required transports
-	_ "upspin.io/key/transports"
+	_ "github.com/palager/upspin/key/transports"
 
 	yaml "gopkg.in/yaml.v2"
 )

@@ -4,7 +4,7 @@
 
 // Package plain is a simple Packing that passes the data untouched.
 // The pathname, packing, and time are signed.
-package plain // import "upspin.io/pack/plain"
+package plain // import "github.com/palager/upspin/pack/plain"
 
 import (
 	"crypto/ecdsa"
@@ -12,13 +12,13 @@ import (
 	"encoding/binary"
 	"math/big"
 
-	"upspin.io/errors"
-	"upspin.io/factotum"
-	"upspin.io/pack"
-	"upspin.io/pack/internal"
-	"upspin.io/pack/packutil"
-	"upspin.io/path"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/factotum"
+	"github.com/palager/upspin/pack"
+	"github.com/palager/upspin/pack/internal"
+	"github.com/palager/upspin/pack/packutil"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
 )
 
 type plainPack struct{}

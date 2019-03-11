@@ -12,8 +12,8 @@ import (
 	"path/filepath"
 	"time"
 
-	"upspin.io/bind"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/upspin"
 )
 
 // This file implements the storage scan.

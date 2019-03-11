@@ -12,7 +12,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"upspin.io/upspin"
+	"github.com/palager/upspin/upspin"
 )
 
 // ServerConfig describes the configuration of an upspinserver.

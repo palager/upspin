@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"upspin.io/upspin"
+	"github.com/palager/upspin/upspin"
 )
 
 func TestParse(t *testing.T) {

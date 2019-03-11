@@ -9,10 +9,10 @@ import (
 	"fmt"
 	"os"
 
-	"upspin.io/config"
-	"upspin.io/flags"
-	"upspin.io/log"
-	"upspin.io/version"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/flags"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/version"
 )
 
 const cmdName = "cacheserver"
@@ -63,7 +63,7 @@ func main() {
 func usage() {
 	fmt.Fprintln(os.Stderr, "Usage: cacheserver [flags]")
 	fmt.Fprintln(os.Stderr, "For more information about cacheserver, run")
-	fmt.Fprintln(os.Stderr, "\tgo doc upspin.io/cmd/cacheserver")
+	fmt.Fprintln(os.Stderr, "\tgo doc github.com/palager/upspin/cmd/cacheserver")
 	fmt.Fprintln(os.Stderr, "")
 	flag.PrintDefaults()
 }

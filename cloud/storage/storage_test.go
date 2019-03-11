@@ -8,9 +8,9 @@ import (
 	"reflect"
 	"testing"
 
-	"upspin.io/cloud/storage"
-	"upspin.io/cloud/storage/storagetest"
-	"upspin.io/errors"
+	"github.com/palager/upspin/cloud/storage"
+	"github.com/palager/upspin/cloud/storage/storagetest"
+	"github.com/palager/upspin/errors"
 )
 
 func TestRegister(t *testing.T) {

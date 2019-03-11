@@ -8,10 +8,10 @@ import (
 	"reflect"
 	"testing"
 
-	"upspin.io/upspin"
+	"github.com/palager/upspin/upspin"
 
-	_ "upspin.io/dir/inprocess"
-	_ "upspin.io/store/inprocess"
+	_ "github.com/palager/upspin/dir/inprocess"
+	_ "github.com/palager/upspin/store/inprocess"
 )
 
 var (

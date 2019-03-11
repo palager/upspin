@@ -4,7 +4,7 @@
 
 // Package mail defines an interface for sending mail that abstracts common
 // functionality between all mail providers such as SendGrid or MailGun.
-package mail // import "upspin.io/cloud/mail"
+package mail // import "github.com/palager/upspin/cloud/mail"
 
 // Mail sends email.
 type Mail interface {

@@ -8,8 +8,8 @@ import (
 	"flag"
 	"fmt"
 
-	"upspin.io/bind"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/upspin"
 )
 
 func (s *State) getref(args ...string) {

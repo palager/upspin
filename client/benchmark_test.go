@@ -9,19 +9,19 @@ import (
 	"fmt"
 	"testing"
 
-	"upspin.io/config"
-	"upspin.io/factotum"
-	"upspin.io/log"
-	"upspin.io/test/testutil"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/factotum"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/test/testutil"
+	"github.com/palager/upspin/upspin"
 
 	// Load some packers
-	_ "upspin.io/pack/ee"
-	_ "upspin.io/pack/plain"
+	_ "github.com/palager/upspin/pack/ee"
+	_ "github.com/palager/upspin/pack/plain"
 )
 
 const (
-	userNamePattern = "benchuser%d@upspin.io"
+	userNamePattern = "benchuser%d@github.com/palager/upspin"
 	fileName        = "/file.txt"
 )
 

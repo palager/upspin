@@ -4,14 +4,14 @@
 
 // Storeserver is a wrapper for a store implementation that presents it as an
 // HTTP interface.
-package main // import "upspin.io/cmd/storeserver"
+package main // import "github.com/palager/upspin/cmd/storeserver"
 
 import (
-	"upspin.io/cloud/https"
-	"upspin.io/serverutil/storeserver"
+	"github.com/palager/upspin/cloud/https"
+	"github.com/palager/upspin/serverutil/storeserver"
 
 	// Storage implementation.
-	_ "upspin.io/cloud/storage/disk"
+	_ "github.com/palager/upspin/cloud/storage/disk"
 )
 
 func main() {

@@ -7,8 +7,8 @@ package rpc
 import (
 	"time"
 
-	"upspin.io/cache"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/cache"
+	"github.com/palager/upspin/upspin"
 )
 
 // Session contains information about the connection and the authenticated user, if any.

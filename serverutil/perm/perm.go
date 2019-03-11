@@ -9,14 +9,14 @@ import (
 	"sync"
 	"time"
 
-	"upspin.io/access"
-	"upspin.io/bind"
-	"upspin.io/client/clientutil"
-	"upspin.io/errors"
-	"upspin.io/log"
-	"upspin.io/path"
-	"upspin.io/upspin"
-	"upspin.io/user"
+	"github.com/palager/upspin/access"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/client/clientutil"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/user"
 )
 
 // WritersGroupFile is the name of the Group file that specifies
@@ -299,7 +299,7 @@ func (p *Perm) IsWriter(u upspin.UserName) bool {
 	if p.writers == nil {
 		return true
 	}
-	// If the special user "all@upspin.io" is present, allow all.
+	// If the special user "all@github.com/palager/upspin" is present, allow all.
 	if p.writers[access.AllUsers] {
 		return true
 	}

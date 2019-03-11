@@ -15,8 +15,8 @@ import (
 	"io"
 	"os"
 
-	"upspin.io/cache"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/cache"
+	"github.com/palager/upspin/upspin"
 )
 
 // DumpLog writes human readable logs to stdout.

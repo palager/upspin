@@ -23,7 +23,7 @@
 // 	joe@domain.com
 // 	admins # A group defined in this user's tree.
 //
-package access // import "upspin.io/access"
+package access // import "github.com/palager/upspin/access"
 
 import (
 	"bufio"
@@ -35,10 +35,10 @@ import (
 	"sync"
 	"unicode/utf8"
 
-	"upspin.io/errors"
-	"upspin.io/path"
-	"upspin.io/upspin"
-	"upspin.io/user"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/user"
 )
 
 const (
@@ -53,7 +53,7 @@ const (
 	// All is a shorthand for AllUsers. Its appearance in a user list
 	// grants access to everyone who can authenticate to the Upspin system.
 	// This constant can be used in Access files, but will always be expanded
-	// to the full name ("all@upspin.io") when returned from Access.Users
+	// to the full name ("all@github.com/palager/upspin") when returned from Access.Users
 	// and such.
 	// If it is present with the Read or "*" rights, it must be the only read write
 	// explicitly granted. (Another user can have "*" rights.)
@@ -65,7 +65,7 @@ const (
 	// shorthand "all" in a user list. See the comment about All for more
 	// details. Its appearance in a user list grants access to everyone who
 	// can authenticate to the Upspin system.
-	AllUsers upspin.UserName = "all@upspin.io"
+	AllUsers upspin.UserName = "all@github.com/palager/upspin"
 )
 
 var (
@@ -338,9 +338,9 @@ func isAll(user []byte) bool {
 	return len(user) == len(allBytes) && bytes.EqualFold(user, allBytes)
 }
 
-// isAllUsers is a case-insensitive check "all@upspin.io".
+// isAllUsers is a case-insensitive check "all@github.com/palager/upspin".
 func isAllUsers(user []byte) bool {
-	// Check for length to be fast. Safe because "all@upspin.io" is ASCII.
+	// Check for length to be fast. Safe because "all@github.com/palager/upspin" is ASCII.
 	return len(user) == len(allUsersBytes) && bytes.EqualFold(user, allUsersBytes)
 }
 
@@ -351,11 +351,11 @@ func isAllUsers(user []byte) bool {
 func parsedAppend(list []path.Parsed, owner upspin.UserName, users ...[]byte) ([]path.Parsed, []byte, error) {
 	var all []byte
 	for _, user := range users {
-		// Reject "all@upspin.io" as user input.
+		// Reject "all@github.com/palager/upspin" as user input.
 		if isAllUsers(user) {
 			return nil, nil, errors.Errorf("reserved user name %q", user)
 		}
-		// Case-insensitive check for "all" which we canonicalize to "all@upspin.io".
+		// Case-insensitive check for "all" which we canonicalize to "all@github.com/palager/upspin".
 		// We require it to be the only item on the line.
 		if isAll(user) {
 			all = user
@@ -936,7 +936,7 @@ func UnmarshalJSON(name upspin.PathName, jsonAccess []byte) (*Access, error) {
 	return access, nil
 }
 
-// IsReadableByAll reports whether the Access file has read:all or read:all@upspin.io
+// IsReadableByAll reports whether the Access file has read:all or read:all@github.com/palager/upspin
 func (a *Access) IsReadableByAll() bool {
 	return a.worldReadable
 }

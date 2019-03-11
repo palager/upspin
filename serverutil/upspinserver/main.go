@@ -6,7 +6,7 @@
 // stand-alone machines. It provides only the production implementations of the
 // dir and store servers (dir/server and store/server).
 // It provides the common cod used by all upspinserver commands.
-package upspinserver // import "upspin.io/serverutil/upspinserver"
+package upspinserver // import "github.com/palager/upspin/serverutil/upspinserver"
 
 import (
 	"encoding/json"
@@ -20,29 +20,29 @@ import (
 	"sync"
 	"time"
 
-	"upspin.io/client"
-	"upspin.io/config"
-	dirServer "upspin.io/dir/server"
-	"upspin.io/errors"
-	"upspin.io/factotum"
-	"upspin.io/flags"
-	"upspin.io/log"
-	"upspin.io/rpc/dirserver"
-	"upspin.io/rpc/storeserver"
-	"upspin.io/serverutil/perm"
-	"upspin.io/serverutil/web"
-	storeServer "upspin.io/store/server"
-	"upspin.io/subcmd"
-	"upspin.io/upspin"
-	"upspin.io/version"
+	"github.com/palager/upspin/client"
+	"github.com/palager/upspin/config"
+	dirServer "github.com/palager/upspin/dir/server"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/factotum"
+	"github.com/palager/upspin/flags"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/rpc/dirserver"
+	"github.com/palager/upspin/rpc/storeserver"
+	"github.com/palager/upspin/serverutil/perm"
+	"github.com/palager/upspin/serverutil/web"
+	storeServer "github.com/palager/upspin/store/server"
+	"github.com/palager/upspin/subcmd"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/version"
 
 	// Packers.
-	_ "upspin.io/pack/ee"
-	_ "upspin.io/pack/eeintegrity"
-	_ "upspin.io/pack/plain"
+	_ "github.com/palager/upspin/pack/ee"
+	_ "github.com/palager/upspin/pack/eeintegrity"
+	_ "github.com/palager/upspin/pack/plain"
 
 	// Required transports.
-	_ "upspin.io/transports"
+	_ "github.com/palager/upspin/transports"
 )
 
 var (

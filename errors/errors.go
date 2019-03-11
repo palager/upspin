@@ -13,8 +13,8 @@ import (
 	"runtime"
 	"strings"
 
-	"upspin.io/log"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/upspin"
 )
 
 // Error is the type that implements the error interface.

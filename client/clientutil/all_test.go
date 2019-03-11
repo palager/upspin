@@ -10,18 +10,18 @@ import (
 	"math/big"
 	"testing"
 
-	"upspin.io/bind"
-	"upspin.io/config"
-	"upspin.io/errors"
-	"upspin.io/factotum"
-	"upspin.io/pack/packutil"
-	"upspin.io/test/testfixtures"
-	"upspin.io/test/testutil"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/factotum"
+	"github.com/palager/upspin/pack/packutil"
+	"github.com/palager/upspin/test/testfixtures"
+	"github.com/palager/upspin/test/testutil"
+	"github.com/palager/upspin/upspin"
 
-	_ "upspin.io/pack/plain"
+	_ "github.com/palager/upspin/pack/plain"
 
-	keyserver "upspin.io/key/inprocess"
+	keyserver "github.com/palager/upspin/key/inprocess"
 )
 
 func init() {

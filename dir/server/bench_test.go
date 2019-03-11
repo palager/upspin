@@ -10,10 +10,10 @@ import (
 	"os"
 	"testing"
 
-	"upspin.io/cache"
-	"upspin.io/log"
-	"upspin.io/path"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/cache"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
 )
 
 // These benchmarks by default run on local storage. To isolate the performance

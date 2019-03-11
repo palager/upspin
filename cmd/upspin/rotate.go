@@ -7,7 +7,7 @@ package main
 import (
 	"flag"
 
-	"upspin.io/config"
+	"github.com/palager/upspin/config"
 )
 
 func (s *State) rotate(args ...string) {

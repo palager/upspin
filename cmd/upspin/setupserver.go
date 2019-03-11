@@ -15,12 +15,12 @@ import (
 	"path/filepath"
 	"strings"
 
-	"upspin.io/bind"
-	"upspin.io/config"
-	"upspin.io/factotum"
-	"upspin.io/flags"
-	"upspin.io/subcmd"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/factotum"
+	"github.com/palager/upspin/flags"
+	"github.com/palager/upspin/subcmd"
+	"github.com/palager/upspin/upspin"
 )
 
 func (s *State) setupserver(args ...string) {

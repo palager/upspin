@@ -9,9 +9,9 @@ import (
 	"sort"
 	"testing"
 
-	"upspin.io/errors"
-	"upspin.io/path"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
 )
 
 const (
@@ -494,10 +494,10 @@ func TestGroupDisallowsAll(t *testing.T) {
 	tests := []string{
 		"all",
 		"ALL",
-		"all@upspin.io",
+		"all@github.com/palager/upspin",
 		"all@UPSPIN.io",
 		"me@here.com all",
-		"all@upspin.io\nme@here.com",
+		"all@github.com/palager/upspin\nme@here.com",
 	}
 	for _, test := range tests {
 		_, err = ParseGroup(parsed, []byte(test))

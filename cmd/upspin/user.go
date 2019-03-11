@@ -11,10 +11,10 @@ import (
 
 	yaml "gopkg.in/yaml.v2"
 
-	"upspin.io/factotum"
-	"upspin.io/key/usercache"
-	"upspin.io/upspin"
-	"upspin.io/user"
+	"github.com/palager/upspin/factotum"
+	"github.com/palager/upspin/key/usercache"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/user"
 )
 
 func (s *State) user(args ...string) {

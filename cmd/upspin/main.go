@@ -22,20 +22,20 @@ import (
 	// Our dependencies will still use the Upspin logs
 	"log"
 
-	"upspin.io/cmd/cacheserver/cacheutil"
-	"upspin.io/config"
-	"upspin.io/flags"
-	"upspin.io/subcmd"
-	"upspin.io/upspin"
-	"upspin.io/version"
+	"github.com/palager/upspin/cmd/cacheserver/cacheutil"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/flags"
+	"github.com/palager/upspin/subcmd"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/version"
 
 	// Load useful packers
-	_ "upspin.io/pack/ee"
-	_ "upspin.io/pack/eeintegrity"
-	_ "upspin.io/pack/plain"
+	_ "github.com/palager/upspin/pack/ee"
+	_ "github.com/palager/upspin/pack/eeintegrity"
+	_ "github.com/palager/upspin/pack/plain"
 
 	// Load required transports
-	"upspin.io/transports"
+	"github.com/palager/upspin/transports"
 )
 
 const intro = `

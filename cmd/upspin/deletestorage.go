@@ -7,8 +7,8 @@ package main
 import (
 	"flag"
 
-	"upspin.io/bind"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/upspin"
 )
 
 func (s *State) deletestorage(args ...string) {

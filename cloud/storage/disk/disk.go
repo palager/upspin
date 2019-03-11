@@ -3,7 +3,7 @@
 // license that can be found in the LICENSE file.
 
 // Package disk provides a storage.Storage that stores data on local disk.
-package disk // import "upspin.io/cloud/storage/disk"
+package disk // import "github.com/palager/upspin/cloud/storage/disk"
 
 import (
 	"io/ioutil"
@@ -11,10 +11,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"upspin.io/cloud/storage"
-	"upspin.io/cloud/storage/disk/internal/local"
-	"upspin.io/errors"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/cloud/storage"
+	"github.com/palager/upspin/cloud/storage/disk/internal/local"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/upspin"
 )
 
 // New initializes and returns a disk-backed storage.Storage with the given
@@ -65,7 +65,7 @@ func guaranteeNewEncoding(base string) error {
 		format := "Base directory %[1]q uses a deprecated path encoding.\n" +
 			"It must be updated before serving again.\n" +
 			"To update, move the tree aside to a backup location, and run:\n" +
-			"\tgo run upspin.io/cloud/storage/disk/convert.go -old=<backup-location> -new=%[1]q\n" +
+			"\tgo run github.com/palager/upspin/cloud/storage/disk/convert.go -old=<backup-location> -new=%[1]q\n" +
 			"Then restart the server.\n"
 		return errors.Errorf(format, base)
 	}

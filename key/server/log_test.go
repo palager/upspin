@@ -14,10 +14,10 @@ import (
 	"testing"
 	"time"
 
-	"upspin.io/cloud/storage"
-	"upspin.io/cloud/storage/storagetest"
-	"upspin.io/errors"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/cloud/storage"
+	"github.com/palager/upspin/cloud/storage/storagetest"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/upspin"
 )
 
 type noopLogger struct{}

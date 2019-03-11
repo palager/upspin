@@ -18,13 +18,13 @@ import (
 	"strings"
 	"time"
 
-	"upspin.io/access"
-	"upspin.io/client"
-	"upspin.io/client/clientutil"
-	"upspin.io/errors"
-	"upspin.io/log"
-	"upspin.io/path"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/access"
+	"github.com/palager/upspin/client"
+	"github.com/palager/upspin/client/clientutil"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
 )
 
 // IsWriter is a method provided by serverutil/perm.Perm, but in the context of

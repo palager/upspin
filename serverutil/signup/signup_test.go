@@ -11,11 +11,11 @@ import (
 	"strings"
 	"testing"
 
-	"upspin.io/config"
-	"upspin.io/factotum"
-	"upspin.io/key/inprocess"
-	"upspin.io/test/testutil"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/factotum"
+	"github.com/palager/upspin/key/inprocess"
+	"github.com/palager/upspin/test/testutil"
+	"github.com/palager/upspin/upspin"
 )
 
 func TestSignup(t *testing.T) {

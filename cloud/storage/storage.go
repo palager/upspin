@@ -4,13 +4,13 @@
 
 // Package storage implements a low-level interface for storing blobs in
 // stable storage such as a database.
-package storage // import "upspin.io/cloud/storage"
+package storage // import "github.com/palager/upspin/cloud/storage"
 
 import (
 	"strings"
 
-	"upspin.io/errors"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/upspin"
 )
 
 // Storage is a low-level storage interface for services to store their data

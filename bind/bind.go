@@ -3,14 +3,14 @@
 // license that can be found in the LICENSE file.
 
 // Package bind contains the global binding switch and its methods.
-package bind // import "upspin.io/bind"
+package bind // import "github.com/palager/upspin/bind"
 
 import (
 	"sync"
 
-	"upspin.io/errors"
-	"upspin.io/upspin"
-	"upspin.io/user"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/user"
 )
 
 type dialKey struct {

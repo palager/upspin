@@ -20,8 +20,8 @@ package perm
 import (
 	"strings"
 
-	"upspin.io/errors"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/upspin"
 )
 
 // WrapStore wraps the given StoreServer with a StoreServer that checks access

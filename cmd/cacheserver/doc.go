@@ -44,4 +44,4 @@ Example $HOME/upspin/config entry:
 
 	cache: yes
 */
-package main // import "upspin.io/cmd/cacheserver"
+package main // import "github.com/palager/upspin/cmd/cacheserver"

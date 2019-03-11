@@ -4,7 +4,7 @@
 
 // Package storeserver is a wrapper for an upspin.StoreServer implementation
 // that presents it as an authenticated service.
-package storeserver // import "upspin.io/rpc/storeserver"
+package storeserver // import "github.com/palager/upspin/rpc/storeserver"
 
 import (
 	"fmt"
@@ -12,12 +12,12 @@ import (
 
 	pb "github.com/golang/protobuf/proto"
 
-	"upspin.io/config"
-	"upspin.io/errors"
-	"upspin.io/log"
-	"upspin.io/rpc"
-	"upspin.io/upspin"
-	"upspin.io/upspin/proto"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/rpc"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/upspin/proto"
 )
 
 type server struct {

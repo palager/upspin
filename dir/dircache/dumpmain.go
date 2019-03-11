@@ -16,9 +16,9 @@ import (
 	"os"
 	"path"
 
-	"upspin.io/config"
-	"upspin.io/dir/dircache"
-	"upspin.io/flags"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/dir/dircache"
+	"github.com/palager/upspin/flags"
 )
 
 func main() {

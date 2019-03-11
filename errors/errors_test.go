@@ -12,7 +12,7 @@ import (
 	"os/exec"
 	"testing"
 
-	"upspin.io/upspin"
+	"github.com/palager/upspin/upspin"
 )
 
 func TestDebug(t *testing.T) {

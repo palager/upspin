@@ -4,18 +4,18 @@
 
 // Package remote implements an inprocess key server that uses RPC to
 // connect to a remote key server.
-package remote // import "upspin.io/key/remote"
+package remote // import "github.com/palager/upspin/key/remote"
 
 import (
 	"fmt"
 
-	"upspin.io/bind"
-	"upspin.io/errors"
-	"upspin.io/key/usercache"
-	"upspin.io/log"
-	"upspin.io/rpc"
-	"upspin.io/upspin"
-	"upspin.io/upspin/proto"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/key/usercache"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/rpc"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/upspin/proto"
 )
 
 // dialConfig contains the destination and authenticated user of the dial.

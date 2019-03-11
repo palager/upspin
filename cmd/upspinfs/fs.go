@@ -21,16 +21,16 @@ import (
 	"bazil.org/fuse"
 	"bazil.org/fuse/fs"
 
-	"upspin.io/access"
-	"upspin.io/bind"
-	"upspin.io/client"
-	"upspin.io/client/clientutil"
-	"upspin.io/errors"
-	"upspin.io/log"
-	"upspin.io/path"
-	"upspin.io/shutdown"
-	"upspin.io/upspin"
-	"upspin.io/user"
+	"github.com/palager/upspin/access"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/client"
+	"github.com/palager/upspin/client/clientutil"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/shutdown"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/user"
 )
 
 const (

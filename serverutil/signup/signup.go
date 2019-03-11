@@ -21,16 +21,16 @@ import (
 	"strings"
 	"time"
 
-	"upspin.io/cloud/mail"
-	"upspin.io/config"
-	"upspin.io/errors"
-	"upspin.io/factotum"
-	"upspin.io/log"
-	"upspin.io/rpc"
-	"upspin.io/serverutil"
-	"upspin.io/upspin"
-	"upspin.io/user"
-	"upspin.io/valid"
+	"github.com/palager/upspin/cloud/mail"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/factotum"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/rpc"
+	"github.com/palager/upspin/serverutil"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/user"
+	"github.com/palager/upspin/valid"
 )
 
 const (

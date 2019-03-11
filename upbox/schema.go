@@ -11,8 +11,8 @@ Schema files must be in YAML format, of this general form:
 	users:
 	- name: joe
 	- name: jess@example.net
-	  storeserver: store.upspin.io
-	  dirserver: dir.upspin.io
+	  storeserver: store.github.com/palager/upspin
+	  dirserver: dir.github.com/palager/upspin
 	  packing: ee
 	  cache: true
 	servers:
@@ -62,7 +62,7 @@ In the latter cases, the top-level Domain field must be set.
 
 ImportPath specifies the import path for this server that is built before
 starting the server. If empty, the server Name is appended to the string
-"upspin.io/cmd/".
+"github.com/palager/upspin/cmd/".
 
 Other top-level fields
 
@@ -120,7 +120,7 @@ An example schema for a resumable session:
 	domain: local.host
 
 */
-package upbox // import "upspin.io/upbox"
+package upbox // import "github.com/palager/upspin/upbox"
 
 import (
 	"bufio"
@@ -140,11 +140,11 @@ import (
 	"sync"
 	"time"
 
-	"upspin.io/config"
-	"upspin.io/log"
-	"upspin.io/rpc/local"
-	"upspin.io/test/testutil"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/rpc/local"
+	"github.com/palager/upspin/test/testutil"
+	"github.com/palager/upspin/upspin"
 
 	yaml "gopkg.in/yaml.v2"
 )
@@ -219,7 +219,7 @@ type Server struct {
 	// ImportPath specifies the import path for this server
 	// that is built before starting the server.
 	// If empty, the server Name is appended to the string
-	// "upspin.io/cmd/".
+	// "github.com/palager/upspin/cmd/".
 	ImportPath string
 
 	// Flags specifies command-line flags to supply to this server.
@@ -338,7 +338,7 @@ func SchemaFromYAML(doc string) (*Schema, error) {
 
 		// Default to an Upspin command if no import path provided.
 		if s.ImportPath == "" {
-			s.ImportPath = "upspin.io/cmd/" + s.Name
+			s.ImportPath = "github.com/palager/upspin/cmd/" + s.Name
 		}
 	}
 
@@ -484,8 +484,8 @@ func (sc *Schema) Start() error {
 
 	// Build servers and commands.
 	cmds := []string{
-		"upspin.io/cmd/upspin",
-		"upspin.io/cmd/cacheserver",
+		"github.com/palager/upspin/cmd/upspin",
+		"github.com/palager/upspin/cmd/cacheserver",
 	}
 	for _, s := range sc.Servers {
 		cmds = append(cmds, s.ImportPath)

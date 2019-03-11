@@ -3,7 +3,7 @@
 // license that can be found in the LICENSE file.
 
 // Package ei implements an elliptic-curve end-to-end integrity-checked packer.
-package ei // import "upspin.io/pack/eeintegrity"
+package ei // import "github.com/palager/upspin/pack/eeintegrity"
 
 // This is a copy of pack/ee/ee.go, with the encryption removed.
 
@@ -14,13 +14,13 @@ import (
 	"encoding/binary"
 	"math/big"
 
-	"upspin.io/errors"
-	"upspin.io/factotum"
-	"upspin.io/pack"
-	"upspin.io/pack/internal"
-	"upspin.io/pack/packutil"
-	"upspin.io/path"
-	"upspin.io/upspin"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/factotum"
+	"github.com/palager/upspin/pack"
+	"github.com/palager/upspin/pack/internal"
+	"github.com/palager/upspin/pack/packutil"
+	"github.com/palager/upspin/path"
+	"github.com/palager/upspin/upspin"
 )
 
 var _ upspin.Packer = ei{}

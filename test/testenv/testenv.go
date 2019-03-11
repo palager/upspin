@@ -13,36 +13,36 @@ import (
 	"os"
 	"strings"
 
-	"upspin.io/bind"
-	"upspin.io/client"
-	"upspin.io/config"
-	"upspin.io/errors"
-	"upspin.io/factotum"
-	"upspin.io/log"
-	"upspin.io/test/servermux"
-	"upspin.io/test/testutil"
-	"upspin.io/upbox"
-	"upspin.io/upspin"
-	"upspin.io/user"
+	"github.com/palager/upspin/bind"
+	"github.com/palager/upspin/client"
+	"github.com/palager/upspin/config"
+	"github.com/palager/upspin/errors"
+	"github.com/palager/upspin/factotum"
+	"github.com/palager/upspin/log"
+	"github.com/palager/upspin/test/servermux"
+	"github.com/palager/upspin/test/testutil"
+	"github.com/palager/upspin/upbox"
+	"github.com/palager/upspin/upspin"
+	"github.com/palager/upspin/user"
 
 	// Implementations that are instantiated explicitly by New.
-	dirserver_inprocess "upspin.io/dir/inprocess"
-	dirserver_server "upspin.io/dir/server"
-	keyserver "upspin.io/key/inprocess"
-	storeserver "upspin.io/store/inprocess"
+	dirserver_inprocess "github.com/palager/upspin/dir/inprocess"
+	dirserver_server "github.com/palager/upspin/dir/server"
+	keyserver "github.com/palager/upspin/key/inprocess"
+	storeserver "github.com/palager/upspin/store/inprocess"
 
 	// Transports that are selected implicitly by bind.
-	_ "upspin.io/dir/remote"
-	_ "upspin.io/key/remote"
-	_ "upspin.io/store/remote"
+	_ "github.com/palager/upspin/dir/remote"
+	_ "github.com/palager/upspin/key/remote"
+	_ "github.com/palager/upspin/store/remote"
 )
 
 // The servers that "remote" tests will work against.
 const (
-	TestKeyServer   = "key.test.upspin.io:443"
-	TestStoreServer = "store.test.upspin.io:443"
-	TestDirServer   = "dir.test.upspin.io:443"
-	TestServerName  = "dir-server@upspin.io"
+	TestKeyServer   = "key.test.github.com/palager/upspin:443"
+	TestStoreServer = "store.test.github.com/palager/upspin:443"
+	TestDirServer   = "dir.test.github.com/palager/upspin:443"
+	TestServerName  = "dir-server@github.com/palager/upspin"
 )
 
 // Setup is a configuration structure that contains a directory tree and other optional flags.
