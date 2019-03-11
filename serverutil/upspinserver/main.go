@@ -46,9 +46,10 @@ import (
 )
 
 var (
-	cfgPath   = flag.String("serverconfig", defaultCfgPath(), "server configuration `directory`")
-	enableWeb = flag.Bool("web", false, "enable Upspin web interface")
-	readyCh   = make(chan struct{})
+	cfgPath          = flag.String("serverconfig", defaultCfgPath(), "server configuration `directory`")
+	dirserverLogPath = flag.String("dirserverlog", filepath.Join(*cfgPath, "dirserver-logs"), "path for dirserver-logs, must be writable")
+	enableWeb        = flag.Bool("web", false, "enable Upspin web interface")
+	readyCh          = make(chan struct{})
 )
 
 func defaultCfgPath() string {
@@ -133,7 +134,7 @@ func initServer(mode initMode) (*subcmd.ServerConfig, upspin.Config, *perm.Perm,
 	}
 
 	// Set up DirServer.
-	logDir := filepath.Join(*cfgPath, "dirserver-logs")
+	logDir := *dirserverLogPath
 	if err := os.MkdirAll(logDir, 0700); err != nil {
 		return nil, nil, nil, err
 	}
