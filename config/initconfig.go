@@ -54,7 +54,7 @@ var (
 	defaultPacking     = upspin.EEPack
 	defaultKeyEndpoint = upspin.Endpoint{
 		Transport: upspin.Remote,
-		NetAddr:   "key.github.com/palager/upspin:443",
+		NetAddr:   "key.upspin.io:443",
 	}
 )
 
@@ -109,7 +109,7 @@ func FromFile(name string) (upspin.Config, error) {
 //
 // Any endpoints (keyserver, dirserver, storeserver) not set in the data for
 // the config will be set to the "unassigned" transport and an empty network
-// address, except keyserver which defaults to "remote,key.github.com/palager/upspin:443".
+// address, except keyserver which defaults to "remote,key.upspin.io:443".
 // If an endpoint is specified without a transport it is assumed to be
 // the address component of a remote endpoint.
 // If a remote endpoint is specified without a port in its address component
