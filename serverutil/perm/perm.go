@@ -299,7 +299,7 @@ func (p *Perm) IsWriter(u upspin.UserName) bool {
 	if p.writers == nil {
 		return true
 	}
-	// If the special user "all@github.com/palager/upspin" is present, allow all.
+	// If the special user "all@upspin.io" is present, allow all.
 	if p.writers[access.AllUsers] {
 		return true
 	}

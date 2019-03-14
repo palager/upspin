@@ -151,7 +151,7 @@ func TestStoreIncludeRemoteGroups(t *testing.T) {
 
 	// No one else is allowed.
 	for _, user := range []upspin.UserName{
-		"all@github.com/palager/upspin",
+		"all@upspin.io",
 		"foo@bar.com",
 		"god@heaven.infinite",
 		"nobody@nobody.org",

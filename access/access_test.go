@@ -494,10 +494,10 @@ func TestGroupDisallowsAll(t *testing.T) {
 	tests := []string{
 		"all",
 		"ALL",
-		"all@github.com/palager/upspin",
+		"all@upspin.io",
 		"all@UPSPIN.io",
 		"me@here.com all",
-		"all@github.com/palager/upspin\nme@here.com",
+		"all@upspin.io\nme@here.com",
 	}
 	for _, test := range tests {
 		_, err = ParseGroup(parsed, []byte(test))
