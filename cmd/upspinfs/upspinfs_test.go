@@ -444,11 +444,11 @@ func TestSymlink(t *testing.T) {
 
 	// Test a path that leaves Upspin. It should fail.
 	if err := os.Symlink("../../../../quux", filepath.Join(subdir, "wontwork")); err == nil {
-		fatal(t, err)
+		t.Fatalf("symlink out of upspin worked but should not have")
 	}
 
 	if err := os.RemoveAll(testDir); err != nil {
-		t.Fatalf("symlink out of upspin worked but should not have")
+		fatal(t, err)
 	}
 }
 
@@ -465,6 +465,13 @@ func testSymlink(t *testing.T, link, rooted, relative string, contents []byte) {
 	if val != relative {
 		fatalf(t, "%s: Readlink returned %s, expected %s:]", link, val, relative)
 	}
+	s, err := os.Lstat(link)
+	if err != nil {
+		fatal(t, err)
+	}
+	if s.Size() != int64(len(relative)) {
+		fatalf(t, "%s(%v): Lstat returned size %v, expected %v, relative: %q, rooted: %q:]", link, len(link), s.Size(), len(relative), relative, rooted)
+	}
 	remove(t, link)
 
 	// Create and test using relative name.
@@ -477,6 +484,13 @@ func testSymlink(t *testing.T, link, rooted, relative string, contents []byte) {
 	}
 	if val != relative {
 		fatalf(t, "%s: Readlink returned %s, expected %s", link, val, relative)
+	}
+	s, err = os.Lstat(link)
+	if err != nil {
+		fatal(t, err)
+	}
+	if s.Size() != int64(len(relative)) {
+		fatalf(t, "%s(%v): Lstat returned size %v, expected %v, relative: %q, rooted: %q:]", link, len(link), s.Size(), len(relative), relative, rooted)
 	}
 }
 
