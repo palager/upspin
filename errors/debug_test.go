@@ -18,11 +18,9 @@ import (
 )
 
 var errorLines = strings.Split(strings.TrimSpace(`
-	.*/github.com/palager/upspin/errors/debug_test.go:\d+: github.com/palager/upspin/errors_test.func1:
-	.*/github.com/palager/upspin/errors/debug_test.go:\d+: ...T.func2:
-	.*/github.com/palager/upspin/errors/debug_test.go:\d+: ...func3:
-	.*/github.com/palager/upspin/errors/debug_test.go:\d+: ...func4:
-	.*/github.com/palager/upspin/valid/valid.go:\d+: ...valid.UserName:
+	.*/github.com/palager/upspin/errors/debug_test.go:\d+: upspin.io/errors_test..*
+	.*/github.com/palager/upspin/errors/debug_test.go:\d+: .*
+	.*/github.com/palager/upspin/valid/valid.go:\d+: .*valid.UserName:
 	.*/github.com/palager/upspin/user/user.go:\d+: ...user.Parse: op: user@home/path: invalid operation:
 	valid.UserName:
 	user.Parse: user bad-username: user name must contain one @ symbol
